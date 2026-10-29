@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How I Work with AI | Jayesh Pagar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jayesh Pagar's AI-driven working methodology: business gap analysis, requirements, strategy, process optimization and automation - and how it differs from traditional ways of working.">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/ai-approach.css">
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+        <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></symbol>
+        <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></symbol>
+        <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+        <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+        <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+        <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+        <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+        <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/><path d="M6.5 17A2.5 2.5 0 0 0 4 19.5 2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+        <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></symbol>
+        <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+        <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9.5a3 3 0 0 0-3-1.5c-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 .9 3 2-1.3 2-3 2a3 3 0 0 1-3-1.5M12 6v2M12 16v2"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    </defs>
+</svg>
+
+<div class="bg-layer bg-glow"></div>
+<div class="bg-layer bg-grid"></div>
+<div class="bg-layer bg-stars"></div>
+
+<!-- NAV -->
+<header class="nav">
+    <div class="container nav-inner">
+        <a class="brand" href="index.html">
+            <strong>JAYESH PAGAR</strong>
+            <small>AI Consultant</small>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="#difference">The Difference</a></li>
+            <li><a href="#method">Method</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#value">Cost &amp; Value</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="ap-hero" id="top">
+    <div class="container ap-hero-grid">
+        <div>
+            <span class="eyebrow">// How I work</span>
+            <h1>AI-driven problem solving, <span>not just code.</span></h1>
+            <p class="ap-lede">I use AI as a working partner across the whole business problem – finding gaps, analysing requirements, shaping ideas, defining goals, and turning manual processes into practical, scalable automation. Development and quality are part of it. They are not the limit of it.</p>
+            <div class="ap-pills">
+                <span>AI-driven problem solving</span>
+                <span>Business analysis</span>
+                <span>Strategic thinking</span>
+                <span>Process optimisation</span>
+                <span>Automation</span>
+                <span>Continuous improvement</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#value" class="btn btn-primary"><svg><use href="#i-coin"/></svg>Estimate the value</a>
+                <a href="#difference" class="btn">See the difference</a>
+            </div>
+        </div>
+
+        <!-- Method loop -->
+        <div class="loop" role="img" aria-label="A continuous loop of seven stages: Discover, Analyse, Ideate, Define, Align, Automate, Improve – with AI speed and human judgement at the centre.">
+            <div class="loop-ring"></div>
+            <div class="loop-core">
+                <strong>AI speed</strong>
+                <span>+</span>
+                <strong>Human judgement</strong>
+            </div>
+            <div class="loop-node" style="--i:0"><svg><use href="#i-search"/></svg>Discover</div>
+            <div class="loop-node" style="--i:1"><svg><use href="#i-list"/></svg>Analyse</div>
+            <div class="loop-node" style="--i:2"><svg><use href="#i-bulb"/></svg>Ideate</div>
+            <div class="loop-node" style="--i:3"><svg><use href="#i-target"/></svg>Define</div>
+            <div class="loop-node" style="--i:4"><svg><use href="#i-compass"/></svg>Align</div>
+            <div class="loop-node" style="--i:5"><svg><use href="#i-zap"/></svg>Automate</div>
+            <div class="loop-node" style="--i:6"><svg><use href="#i-refresh"/></svg>Improve</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROVEN IMPACT -->
+<section class="metrics-wrap">
+    <div class="container">
+        <p class="ap-note center reveal">Measured results from my own delivery work – not industry averages.</p>
+        <div class="ap-impact">
+            <div class="panel metric reveal"><div class="orb"><svg><use href="#i-users"/></svg></div><div class="num">70–80%</div><div class="lbl">More deliverables at the same team size and timeline</div></div>
+            <div class="panel metric reveal"><div class="orb"><svg><use href="#i-clock"/></svg></div><div class="num">~95%</div><div class="lbl">Shorter cycle: ~12 hours of manual work to a ~35-minute unattended run</div></div>
+            <div class="panel metric reveal"><div class="orb"><svg><use href="#i-list"/></svg></div><div class="num">~75%</div><div class="lbl">Less authoring time on structured, repeatable work</div></div>
+            <div class="panel metric reveal"><div class="orb"><svg><use href="#i-zap"/></svg></div><div class="num">~100%</div><div class="lbl">Of manual ticket-writing effort removed by automated reporting</div></div>
+            <div class="panel metric reveal"><div class="orb"><svg><use href="#i-activity"/></svg></div><div class="num">~60%</div><div class="lbl">Less manual build effort with a dual-AI build-and-fix loop</div></div>
+            <div class="panel metric reveal"><div class="orb"><svg><use href="#i-book"/></svg></div><div class="num">1 day</div><div class="lbl">From zero knowledge of a new domain to a documented, reviewed handover</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- TRADITIONAL VS AI-DRIVEN -->
+<section id="difference">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 01</span>
+            <h2>Traditional vs AI-Driven</h2>
+            <div class="bar"></div>
+        </div>
+        <p class="ap-intro reveal">Traditional work moves through people and hand-offs: someone reads, someone interprets, someone writes it up, and knowledge stays in heads. My approach gives each step an AI partner with clear rules and a written output – and keeps a person on every decision that needs judgement.</p>
+
+        <div class="vs reveal">
+            <div class="vs-head"><span>Activity</span><span>Traditional way</span><span>My AI-driven way</span></div>
+            <div class="vs-row">
+                <span class="vs-act">Finding business gaps</span>
+                <span class="vs-old">Workshops and opinions; gaps surface after something breaks</span>
+                <span class="vs-new">AI compares what a process or system <em>should</em> do with what it actually does, and lists every gap with evidence and a priority</span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Requirements analysis</span>
+                <span class="vs-old">Read, interpret, and hope nothing was assumed</span>
+                <span class="vs-new">AI extracts goals, rules, states and acceptance criteria – and tags every claim as verified, <code>[NOT VERIFIED]</code> or <code>[GAP]</code></span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Learning a new domain</span>
+                <span class="vs-old">Weeks of shadowing and scattered knowledge transfer</span>
+                <span class="vs-new">AI-guided, read-only walkthroughs produce a glossary, a process map and a reviewed handover in about a day</span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Ideas &amp; concepts</span>
+                <span class="vs-old">A few options from whoever is in the room</span>
+                <span class="vs-new">AI generates and stress-tests many options quickly; I shortlist against cost, risk and the business mission</span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Goals, vision &amp; roadmap</span>
+                <span class="vs-old">Long documents that drift from reality</span>
+                <span class="vs-new">Goals tied to measurable outcomes and a ranked, ordered roadmap – with open decisions listed separately for leadership</span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Execution of repetitive work</span>
+                <span class="vs-old">People repeat the same manual steps every cycle</span>
+                <span class="vs-new">Specialised agents do the repeatable parts unattended; people focus on exceptions and decisions</span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Reporting &amp; decisions</span>
+                <span class="vs-old">Copy-paste into spreadsheets; numbers that can't be traced</span>
+                <span class="vs-new">Reports generated from machine-readable results – every number traces back to its source</span>
+            </div>
+            <div class="vs-row">
+                <span class="vs-act">Knowledge</span>
+                <span class="vs-old">Lives in individuals; leaves when they leave</span>
+                <span class="vs-new">Captured in reusable prompts, rules and documentation, so the next person or session starts with it</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- METHOD -->
+<section id="method">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 02</span>
+            <h2>My Method</h2>
+            <div class="bar"></div>
+        </div>
+        <p class="ap-intro reveal">Seven stages that work for any business problem – a process, a product, a team workflow or a compliance requirement. Each stage pairs what AI does fast with what I decide.</p>
+
+        <div class="method">
+            <div class="panel step reveal">
+                <span class="step-no">01</span>
+                <div class="icon-orb"><svg><use href="#i-search"/></svg></div>
+                <h3>Discover gaps &amp; inefficiencies</h3>
+                <p><b>AI:</b> maps the current process, compares it with what it should be, and surfaces delays, duplicate effort and manual hand-offs.</p>
+                <p><b>Me:</b> validate with the people who do the work and decide which gaps matter most.</p>
+            </div>
+            <div class="panel step reveal">
+                <span class="step-no">02</span>
+                <div class="icon-orb"><svg><use href="#i-list"/></svg></div>
+                <h3>Analyse requirements</h3>
+                <p><b>AI:</b> turns stories, specs, tickets and recordings into goals, rules, states and acceptance criteria.</p>
+                <p><b>Me:</b> keep unproven assumptions out – anything not verified is tagged, not promoted to a rule.</p>
+            </div>
+            <div class="panel step reveal">
+                <span class="step-no">03</span>
+                <div class="icon-orb"><svg><use href="#i-bulb"/></svg></div>
+                <h3>Generate concepts</h3>
+                <p><b>AI:</b> drafts several solution concepts, from a small process fix to full automation, with trade-offs.</p>
+                <p><b>Me:</b> shortlist what is practical, affordable and maintainable for the team that will own it.</p>
+            </div>
+            <div class="panel step reveal">
+                <span class="step-no">04</span>
+                <div class="icon-orb"><svg><use href="#i-target"/></svg></div>
+                <h3>Define goals &amp; vision</h3>
+                <p><b>AI:</b> turns the chosen concept into measurable goals, milestones and a ranked roadmap.</p>
+                <p><b>Me:</b> agree success metrics with stakeholders before anything is built.</p>
+            </div>
+            <div class="panel step reveal">
+                <span class="step-no">05</span>
+                <div class="icon-orb"><svg><use href="#i-compass"/></svg></div>
+                <h3>Align with the mission</h3>
+                <p><b>AI:</b> checks each goal against business priorities, compliance rules and constraints.</p>
+                <p><b>Me:</b> escalate product and business decisions to the people who own them.</p>
+            </div>
+            <div class="panel step reveal">
+                <span class="step-no">06</span>
+                <div class="icon-orb"><svg><use href="#i-zap"/></svg></div>
+                <h3>Automate &amp; build</h3>
+                <p><b>AI:</b> specialised agents build, run and repair the repeatable parts, and produce evidence for every result.</p>
+                <p><b>Me:</b> own the design, the guardrails and every irreversible action.</p>
+            </div>
+            <div class="panel step reveal">
+                <span class="step-no">07</span>
+                <div class="icon-orb"><svg><use href="#i-refresh"/></svg></div>
+                <h3>Measure &amp; improve</h3>
+                <p><b>AI:</b> reports outcomes against the agreed metrics and spots where the next gain is.</p>
+                <p><b>Me:</b> feed lessons back as written rules, so the same mistake never repeats.</p>
+            </div>
+            <div class="panel step loop-back reveal">
+                <div class="icon-orb"><svg><use href="#i-refresh"/></svg></div>
+                <h3>And the loop starts again</h3>
+                <p>Each cycle starts from better rules, better data and a clearer view of where the next inefficiency is.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 03</span>
+            <h2>Beyond Development &amp; QA</h2>
+            <div class="bar"></div>
+        </div>
+        <p class="ap-intro reveal">The same AI-driven approach that speeds up software delivery applies to how a business runs. These are the capabilities I bring to an organisation.</p>
+        <div class="grid-3">
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-search"/></svg></div><h3>Business gap analysis</h3><p>Compare what a process, product or system can do against what the business or a regulator needs, and turn every gap into a prioritised, self-contained action card.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-list"/></svg></div><h3>Requirements &amp; analysis</h3><p>Turn unstructured input – stories, specs, tickets, recordings – into clear goals, rules and acceptance criteria that everyone can test against.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-bulb"/></svg></div><h3>Concepts &amp; ideation</h3><p>Rapidly generate and compare solution options so decisions are made from a wide set of choices, not the first idea.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-target"/></svg></div><h3>Goals, vision &amp; roadmaps</h3><p>Translate a business challenge into measurable goals and an ordered roadmap, with open decisions separated out for leadership.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-zap"/></svg></div><h3>Automation discovery</h3><p>Find the manual, repetitive steps worth automating first – where the time saved and risk removed are highest.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-layers"/></svg></div><h3>Process &amp; workflow optimisation</h3><p>Redesign hand-offs so each step produces a reviewable output for the next, removing rework and waiting time.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-chart"/></svg></div><h3>Decision support &amp; reporting</h3><p>Traceable reports and evidence that let managers and product owners decide quickly and confidently.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-book"/></svg></div><h3>Knowledge capture &amp; onboarding</h3><p>Glossaries, guides and reusable prompts that turn individual know-how into team assets and shorten onboarding.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-shield"/></svg></div><h3>Risk &amp; compliance</h3><p>Cross-check systems, records and official documents against each other and against the rules, before an auditor or customer finds the mismatch.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- EXAMPLES -->
+<section id="examples">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 04</span>
+            <h2>From Manual to Scalable</h2>
+            <div class="bar"></div>
+        </div>
+        <p class="ap-intro reveal">Practical patterns from my work, described without client detail. Each one is a business challenge turned into a repeatable solution.</p>
+
+        <div class="grid-2">
+            <div class="panel xform reveal">
+                <h3>An unfamiliar domain, a foreign-language system</h3>
+                <div class="xf"><span class="tag-old">Before</span><p>Weeks of shadowing and knowledge transfer before anyone can contribute.</p></div>
+                <div class="xf"><span class="tag-new">With AI</span><p>AI-guided, read-only walkthroughs of every module; a 60-term glossary and an API guide that now serve as onboarding material.</p></div>
+                <div class="xf-out"><b>1 day</b> to a documented, reviewed handover</div>
+            </div>
+            <div class="panel xform reveal">
+                <h3>A long, manual, repeated cycle</h3>
+                <div class="xf"><span class="tag-old">Before</span><p>About 12 hours of manual execution every time something changes.</p></div>
+                <div class="xf"><span class="tag-new">With AI</span><p>Agents plan, build, run and repair the work; it runs unattended and reports itself.</p></div>
+                <div class="xf-out"><b>~35 minutes</b> unattended – a ~95% reduction</div>
+            </div>
+            <div class="panel xform reveal">
+                <h3>Manual write-ups and status reporting</h3>
+                <div class="xf"><span class="tag-old">Before</span><p>People copy findings into tickets and spreadsheets by hand.</p></div>
+                <div class="xf"><span class="tag-new">With AI</span><p>Agents file complete cards automatically – steps, references, screenshots, severity and owner – from machine-readable results.</p></div>
+                <div class="xf-out"><b>~100%</b> of manual ticket-writing effort removed</div>
+            </div>
+            <div class="panel xform reveal">
+                <h3>"What are we missing?" against a regulator</h3>
+                <div class="xf"><span class="tag-old">Before</span><p>Gaps are found one complaint at a time.</p></div>
+                <div class="xf"><span class="tag-new">With AI</span><p>A systematic capability comparison produced 33 self-contained cards, each with priority, status and a suggested build order.</p></div>
+                <div class="xf-out"><b>A ranked roadmap</b> to full parity, with open decisions separated</div>
+            </div>
+            <div class="panel xform reveal">
+                <h3>Customer complaints with unclear causes</h3>
+                <div class="xf"><span class="tag-old">Before</span><p>Support and development chase every report as a possible bug.</p></div>
+                <div class="xf"><span class="tag-new">With AI</span><p>Reproduce each report from recordings and evidence, then separate real product defects from account set-up problems.</p></div>
+                <div class="xf-out"><b>Clear answers</b> that save support and development time</div>
+            </div>
+            <div class="panel xform reveal">
+                <h3>Same team, more output</h3>
+                <div class="xf"><span class="tag-old">Before</span><p>More work means more people or longer timelines.</p></div>
+                <div class="xf"><span class="tag-new">With AI</span><p>A self-built agentic framework replaced hand-scripted delivery across a programme.</p></div>
+                <div class="xf-out"><b>70–80% more deliverables</b> at the same headcount</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COST & VALUE -->
+<section id="value">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 05</span>
+            <h2>Cost-Effectiveness</h2>
+            <div class="bar"></div>
+        </div>
+        <p class="ap-intro reveal">AI-driven work pays back in five ways. The calculator below lets you apply them to one of your own processes.</p>
+
+        <div class="ap-five">
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-clock"/></svg></div><h3>Time</h3><p>Repeatable work runs unattended, cutting cycle time from hours to minutes.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-users"/></svg></div><h3>Resources</h3><p>The same team delivers far more, so growth doesn't automatically mean hiring.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-trend"/></svg></div><h3>Productivity</h3><p>People stop repeating manual steps and spend their time on decisions and exceptions.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-shield"/></svg></div><h3>Quality &amp; risk</h3><p>Problems are caught before customers or auditors see them – the cheapest point to fix them.</p></div>
+            <div class="panel reveal"><div class="icon-orb"><svg><use href="#i-book"/></svg></div><h3>Knowledge</h3><p>Rules and know-how are written down once and reused, instead of relearned.</p></div>
+        </div>
+
+        <div class="panel calc reveal" id="calculator">
+            <div class="calc-in">
+                <h3>Estimate the savings on one process</h3>
+                <p>Enter your own numbers. The example values are placeholders – change them to match your process.</p>
+                <div class="calc-grid">
+                    <label>Hours one cycle takes<input type="number" id="c-hours" min="0" step="0.5" value="12"></label>
+                    <label>Cycles per month<input type="number" id="c-cycles" min="0" step="1" value="4"></label>
+                    <label>People involved per cycle<input type="number" id="c-people" min="1" step="1" value="2"></label>
+                    <label>Cost per person-hour<input type="number" id="c-rate" min="0" step="1" value="25"></label>
+                </div>
+                <label class="calc-range">Time reduction from AI-driven automation: <b id="c-red-out">75%</b>
+                    <input type="range" id="c-red" min="20" max="95" step="5" value="75">
+                </label>
+                <p class="ap-note">The reductions I have delivered ranged from about 60% to about 95%, depending on how repeatable the work is.</p>
+            </div>
+            <div class="calc-out" aria-live="polite">
+                <div><b id="o-hours">–</b><span>Person-hours saved per month</span></div>
+                <div><b id="o-year">–</b><span>Person-hours saved per year</span></div>
+                <div><b id="o-cost">–</b><span>Cost saved per year (same currency as your rate)</span></div>
+                <div><b id="o-fte">–</b><span>Full-time people freed up (at 160 h/month)</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GUARDRAILS -->
+<section id="trust">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 06</span>
+            <h2>Responsible by Design</h2>
+            <div class="bar"></div>
+        </div>
+        <p class="ap-intro reveal">Speed is only valuable if the results can be trusted. These rules are part of how I work, not an afterthought.</p>
+        <div class="grid-2">
+            <div class="panel reveal"><h3>AI tags its claims</h3><p>Every statement is marked as verified, not verified, or a known gap – so assumptions never become requirements.</p></div>
+            <div class="panel reveal"><h3>Humans own irreversible actions</h3><p>Signing, cancelling, money-moving and product-rule decisions stay with people. AI prepares the evidence; a person makes the call.</p></div>
+            <div class="panel reveal"><h3>Never hide a problem to look good</h3><p>Automation may fix how a check runs, but is never allowed to weaken what it checks. A real problem stays visible until it is fixed.</p></div>
+            <div class="panel reveal"><h3>Encode the rules, not just the steps</h3><p>Lessons learned are written into persistent rules, so the same mistake doesn't repeat – for the next session or the next person.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- VALUE BY ROLE -->
+<section id="roles">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 07</span>
+            <h2>The Value I Bring</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="grid-4 ap-roles">
+            <div class="panel reveal"><h3>Leadership</h3><p>More output from the same budget, measurable results, and lower risk from compliance and data errors.</p></div>
+            <div class="panel reveal"><h3>Product owners</h3><p>Ranked roadmaps, clear gap analysis, and open decisions surfaced early instead of discovered late.</p></div>
+            <div class="panel reveal"><h3>Engineering teams</h3><p>Actionable cards with exact steps and evidence, less rework, and automation that maintains itself.</p></div>
+            <div class="panel reveal"><h3>Operations &amp; support</h3><p>Fewer manual hand-offs, faster triage, and documented processes that new people can pick up quickly.</p></div>
+        </div>
+
+        <div class="panel ap-cta reveal">
+            <div>
+                <h3>Have a process that eats time every week?</h3>
+                <p>Let's look at where AI can remove the manual work and what it would be worth to your organisation.</p>
+            </div>
+            <div class="hero-actions">
+                <a href="index.html#contact" class="btn btn-primary"><svg><use href="#i-send"/></svg>Start a conversation</a>
+                <a href="index.html" class="btn">View portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="container foot">
+        <span>© <span id="year">2026</span> Jayesh Pagar · AI Consultant &amp; Agentic AI Systems Architect</span>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/jayesh-pagar-333019231" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+            <a href="https://github.com/jayeshpagar070" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a href="mailto:jayeshpagar070@gmail.com" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+        const open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+    });
+    links.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') links.classList.remove('open');
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach((el) => io.observe(el));
+    } else {
+        reveals.forEach((el) => el.classList.add('in'));
+    }
+
+    // Savings calculator
+    const num = (id) => Math.max(0, parseFloat(document.getElementById(id).value) || 0);
+    const fmt = (n, d = 0) => n.toLocaleString(undefined, { maximumFractionDigits: d });
+    function calc() {
+        const red = num('c-red') / 100;
+        const monthly = num('c-hours') * num('c-cycles') * Math.max(1, num('c-people')) * red;
+        document.getElementById('c-red-out').textContent = Math.round(red * 100) + '%';
+        document.getElementById('o-hours').textContent = fmt(monthly, 1);
+        document.getElementById('o-year').textContent = fmt(monthly * 12);
+        document.getElementById('o-cost').textContent = fmt(monthly * 12 * num('c-rate'));
+        document.getElementById('o-fte').textContent = fmt(monthly / 160, 2);
+    }
+    document.querySelectorAll('#calculator input').forEach((el) => el.addEventListener('input', calc));
+    calc();
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

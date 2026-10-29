@@ -1,0 +1,143 @@
+/* ============ AI Approach page (extends theme.css) ============ */
+.ap-hero { padding: 80px 0 40px; }
+.ap-hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.ap-hero-grid > *, .ap-impact > *, .method > *, .ap-five > *, .calc > *, .calc-grid > *, .calc-out > * { min-width: 0; }
+.ap-hero h1 {
+    font-family: var(--font-name); font-weight: 800; font-size: clamp(38px, 5.2vw, 68px); line-height: 1.05;
+    margin: 0 0 18px; color: #fff; text-shadow: 0 0 40px rgba(139, 92, 246, .35);
+}
+.ap-hero h1 span {
+    background: linear-gradient(90deg, var(--violet-2), var(--cyan));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.ap-lede { color: var(--muted); font-size: 18px; max-width: 600px; margin: 0 0 22px; }
+.ap-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.ap-pills span {
+    font-size: 12px; letter-spacing: 1px; padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line-strong); background: rgba(139, 92, 246, .1); color: var(--text);
+}
+.ap-intro { text-align: center; color: var(--muted); max-width: 760px; margin: -20px auto 36px; }
+.ap-note { font-size: 13px; color: var(--muted); }
+.ap-note.center { text-align: center; margin-bottom: 18px; }
+
+/* Method loop diagram */
+.loop { --size: 440px; --radius: 170px; position: relative; width: var(--size); max-width: 100%; aspect-ratio: 1; margin: 0 auto; }
+.loop-ring {
+    position: absolute; inset: 12%; border-radius: 50%;
+    border: 1px dashed rgba(139, 92, 246, .55); animation: spin 50s linear infinite;
+}
+.loop-ring::after {
+    content: ""; position: absolute; inset: -4px; border-radius: 50%;
+    border: 2px solid transparent; border-top-color: var(--orange); border-right-color: var(--violet);
+    filter: drop-shadow(0 0 6px var(--violet));
+}
+.loop-core {
+    position: absolute; inset: 34%; border-radius: 50%; display: grid; place-content: center; text-align: center; gap: 2px;
+    background: radial-gradient(circle, rgba(139, 92, 246, .35), rgba(11, 15, 42, .9) 70%);
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, .5), 0 0 40px rgba(139, 92, 246, .45);
+}
+.loop-core strong { font-family: var(--font-display); font-size: 12px; letter-spacing: 1.5px; color: #fff; }
+.loop-core span { color: var(--orange); font-weight: 700; }
+.loop-node {
+    position: absolute; left: 50%; top: 50%; width: 96px; margin: -26px 0 0 -48px;
+    display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border-radius: 8px;
+    font-family: var(--font-display); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: #fff;
+    border: 1px solid var(--line-strong); background: rgba(6, 8, 24, .85); box-shadow: 0 0 16px rgba(139, 92, 246, .3);
+    transform: rotate(calc(var(--i) * 360deg / 7 - 90deg)) translate(var(--radius)) rotate(calc(-1 * (var(--i) * 360deg / 7 - 90deg)));
+}
+.loop-node svg { width: 18px; height: 18px; color: var(--violet-2); }
+
+.ap-impact { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+/* Traditional vs AI table */
+.vs { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--panel-2); }
+.vs-head, .vs-row { display: grid; grid-template-columns: 1fr 1.3fr 1.8fr; }
+.vs-head span {
+    padding: 14px 18px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--violet-2);
+    background: rgba(139, 92, 246, .12); border-bottom: 1px solid var(--line);
+}
+.vs-head span:last-child { color: var(--cyan); }
+.vs-row > span { padding: 16px 18px; border-bottom: 1px solid rgba(139, 92, 246, .12); font-size: 15px; }
+.vs-row:last-child > span { border-bottom: 0; }
+.vs-act { color: #fff; font-weight: 600; }
+.vs-old { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(248, 113, 113, .45); }
+.vs-new { color: var(--text); background: rgba(94, 234, 212, .04); border-left: 2px solid rgba(94, 234, 212, .4); }
+.vs code { font-size: 12px; color: var(--cyan); background: rgba(94, 234, 212, .08); padding: 1px 5px; border-radius: 3px; }
+
+/* Method steps */
+.method { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.step { position: relative; }
+.step-no {
+    position: absolute; top: 18px; right: 20px; font-family: var(--font-display); font-size: 28px; font-weight: 800;
+    color: rgba(139, 92, 246, .25);
+}
+.step p { font-size: 14px; }
+.step p + p { margin-top: 8px; }
+.step p b { color: var(--orange); font-weight: 600; }
+.step.loop-back { border-style: dashed; display: flex; flex-direction: column; justify-content: center; }
+
+/* Before / after */
+.xform h3 { font-size: 14px; }
+.xf { display: grid; grid-template-columns: 74px 1fr; gap: 12px; align-items: start; margin-top: 12px; }
+.xf p { font-size: 14px; }
+.tag-old, .tag-new {
+    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; text-align: center;
+    padding: 4px 0; border-radius: 4px;
+}
+.tag-old { color: #fca5a5; border: 1px solid rgba(248, 113, 113, .45); }
+.tag-new { color: var(--cyan); border: 1px solid rgba(94, 234, 212, .5); background: rgba(94, 234, 212, .07); }
+.xf-out {
+    margin-top: 16px; padding: 12px 14px; border-radius: 8px; font-size: 14px; color: var(--muted);
+    background: rgba(139, 92, 246, .1); border: 1px solid var(--line-strong);
+}
+.xf-out b { color: #fff; font-family: var(--font-display); font-size: 15px; letter-spacing: .5px; margin-right: 4px; }
+
+/* Cost & value */
+.ap-five { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 26px; }
+.ap-five p { font-size: 14px; }
+.calc { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; border-color: rgba(255, 122, 61, .45); }
+.calc-in > p { margin-bottom: 18px; }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.calc label { display: flex; flex-direction: column; gap: 6px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+.calc input[type="number"] {
+    padding: 11px 12px; border-radius: 8px; font: inherit; font-size: 16px; text-transform: none; letter-spacing: 0; color: var(--text);
+    background: rgba(6, 8, 24, .7); border: 1px solid var(--line); outline: none;
+}
+.calc input[type="number"]:focus { border-color: var(--violet); box-shadow: 0 0 0 3px rgba(139, 92, 246, .2); }
+.calc-range b { color: var(--orange); font-family: var(--font-display); }
+.calc input[type="range"] { width: 100%; accent-color: var(--violet); }
+.calc-out { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: center; }
+.calc-out div { padding: 18px; border-radius: 8px; border: 1px solid var(--line); background: rgba(6, 8, 24, .55); }
+.calc-out b { display: block; font-family: var(--font-display); font-size: 26px; color: #fff; text-shadow: 0 0 18px rgba(139, 92, 246, .6); }
+.calc-out span { font-size: 13px; color: var(--muted); }
+
+.ap-roles p { font-size: 14px; }
+.ap-cta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; margin-top: 26px; border-color: rgba(255, 122, 61, .45); }
+.ap-cta .hero-actions { margin: 0; }
+
+@media (max-width: 1060px) {
+    .method { grid-template-columns: repeat(2, 1fr); }
+    .ap-five { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+    .ap-hero-grid, .calc { grid-template-columns: 1fr; }
+    .ap-hero { padding-top: 50px; }
+    .loop { --size: 380px; --radius: 145px; }
+    .ap-impact { grid-template-columns: repeat(2, 1fr); }
+    .vs-head { display: none; }
+    .vs-row { grid-template-columns: 1fr; border-bottom: 1px solid var(--line); }
+    .vs-row > span { border-bottom: 0; padding: 8px 18px; }
+    .vs-act { padding-top: 16px !important; }
+    .vs-new { margin: 0 18px 16px; padding: 10px 12px !important; }
+}
+@media (max-width: 600px) {
+    .loop { --size: 320px; --radius: 118px; }
+    .loop-node { width: 78px; margin: -24px 0 0 -39px; font-size: 9px; letter-spacing: 1px; }
+    .method, .ap-five, .calc-grid, .calc-out { grid-template-columns: 1fr; }
+    .ap-impact { gap: 12px; }
+}
+@media (max-width: 360px) {
+    .loop { --size: 286px; --radius: 104px; }
+    .loop-node { width: 70px; margin: -22px 0 0 -35px; padding: 6px 2px; }
+    .loop-core strong { font-size: 10px; }
+}

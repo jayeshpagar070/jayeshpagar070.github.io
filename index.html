@@ -1,280 +1,1029 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jayesh Pagar Portfolio</title>
+    <title>Jayesh Pagar | AI Consultant &amp; Agentic AI Systems Architect</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        #typing-animation {
-            font-size: 30px;
-            font-weight: bold;
-            color: #fff;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        .zoom-effect {
-            overflow: hidden;
-            transition: transform 0.3s ease-out;
-        }
-        .zoom-effect:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jayesh Pagar - AI Consultant, Test Engineer and Agentic AI Systems Architect specializing in autonomous QA and AI-driven security automation.">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Jayesh Pagar</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
-            <span class="oi oi-menu"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
-                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-                <li class="nav-item"><a href="#work-section" class="nav-link"><span>Work Portfolio</span></a></li>
-                <li class="nav-item"><a href="#project-section" class="nav-link"><span>Academic Projects</span></a></li>
-                <li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a></li>
-                <li class="nav-item"><a href="#achievements-section" class="nav-link"><span>Achievements</span></a></li>
-                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-            </ul>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+        <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+        <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+        <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+        <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+        <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+        <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+        <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    </defs>
+</svg>
+
+<div class="bg-layer bg-glow"></div>
+<div class="bg-layer bg-grid"></div>
+<div class="bg-layer bg-stars"></div>
+
+<!-- NAV -->
+<header class="nav">
+    <div class="container nav-inner">
+        <a class="brand" href="#home">
+            <strong>JAYESH PAGAR</strong>
+            <small>AI Consultant</small>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="ai-approach.html" class="nav-feature">How I Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#academic">Academic</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+    <!-- Holographic world map with Nashik pin -->
+    <div class="hero-map" aria-hidden="true">
+        <img src="images/world-map.svg" alt="">
+        <svg class="map-fx" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <linearGradient id="arc-grad" x1="1" y1="0" x2="0" y2="0">
+                    <stop offset="0" stop-color="#ff7a3d"/>
+                    <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+            <path class="arc" d="M1015 220 Q 620 -40 231 110"/>
+            <path class="arc a2" d="M1015 220 Q 680 30 343 154"/>
+            <path class="arc a3" d="M1015 220 Q 760 60 520 110"/>
+            <circle class="pulse" cx="1015" cy="220" r="10"/>
+            <circle class="pin" cx="1015" cy="220" r="6"/>
+            <circle class="node" cx="231" cy="110" r="4"/>
+            <circle class="node" cx="343" cy="154" r="4"/>
+            <circle class="node" cx="520" cy="110" r="4"/>
+        </svg>
+    </div>
+
+    <!-- Large duotone portrait -->
+    <div class="hero-portrait" aria-hidden="true">
+        <div class="halo"></div>
+        <div class="halo h2"></div>
+        <div class="photo"></div>
+    </div>
+
+    <div class="container hero-ui">
+        <div class="hud-thumb">
+            <div class="thumb-img"></div>
+            <div class="thumb-meta">
+                <span>ID // JP-070</span>
+                <strong>AI CONSULTANT</strong>
+                <span>Nashik · India</span>
+            </div>
+        </div>
+
+        <div class="hud-box">
+            <span class="dot"></span> AGENTIC AI <b>//</b> AUTONOMOUS QA <b>//</b> AI SECURITY
+        </div>
+
+        <span class="hud-tag">OPEN TO RELOCATION &amp; REMOTE</span>
+
+        <div class="hero-copy">
+            <span class="eyebrow">// Agentic AI Systems Architect</span>
+            <h1>Jayesh Pagar</h1>
+            <div class="typing" id="typing-animation"></div>
+            <p class="hero-sub">Test Engineer | Agentic AI Systems Architect | Autonomous QA &amp; AI-Driven Security Automation</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary"><svg><use href="#i-send"/></svg>Hire Me</a>
+                <a href="https://www.linkedin.com/in/jayesh-pagar-333019231" class="btn" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+                <a href="https://github.com/jayeshpagar070" class="btn btn-orange" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>GitHub</a>
+            </div>
         </div>
     </div>
-</nav>
+</section>
 
-<!-- HERO -->
-<section id="home-section" class="hero">
-    <div class="home-slider owl-carousel">
-        <div class="slider-item">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
-                    <div class="one-third js-fullheight order-md-last img" style="background-image:none;">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="one-forth d-flex align-items-center ftco-animate">
-                        <div class="text">
-                            <span class="subheading">Hello!</span>
-                            <h1 class="mb-4 mt-3">I'm <span>Jayesh Pagar</span></h1>
-                            <span id="typing-animation"></span>
-                            <script>
-                                const typingElement = document.getElementById('typing-animation');
-                                const texts = ["Automation Tester", "Security Tester", "QA Engineer"];
-                                let idx = 0;
-                                function type() {
-                                    let text = texts[idx];
-                                    let i = 0;
-                                    typingElement.textContent = "";
-                                    let interval = setInterval(() => {
-                                        typingElement.textContent += text[i];
-                                        i++;
-                                        if (i === text.length) {
-                                            clearInterval(interval);
-                                            setTimeout(() => {
-                                                idx = (idx + 1) % texts.length;
-                                                type();
-                                            }, 1500);
-                                        }
-                                    }, 150);
-                                }
-                                type();
-                            </script>
-                            <br><br>
-                            <h2>Jr. Test Engineer | Automation & Security Testing</h2>
-                            <p>
-                                <a href="https://www.linkedin.com/in/jayesh-pagar-333019231" class="btn btn-primary py-3 px-4">LinkedIn</a>
-                                <a href="https://github.com/jayeshpagar070" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
-                                <a href="https://jayeshpagar070.github.io" class="btn btn-primary py-3 px-4">Portfolio</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<section class="metrics-wrap">
+    <div class="container">
+        <div class="metrics">
+            <div class="panel metric reveal">
+                <div class="orb"><svg><use href="#i-trend"/></svg></div>
+                <div class="num">70–80%</div>
+                <div class="lbl">More deliverables at equivalent headcount</div>
+            </div>
+            <div class="panel metric reveal">
+                <div class="orb"><svg><use href="#i-clock"/></svg></div>
+                <div class="num">~95%</div>
+                <div class="lbl">Regression-cycle reduction (12 h → 35 min)</div>
+            </div>
+            <div class="panel metric reveal">
+                <div class="orb"><svg><use href="#i-shield"/></svg></div>
+                <div class="num">30%</div>
+                <div class="lbl">Fewer post-release defects</div>
+            </div>
+            <div class="panel metric reveal">
+                <div class="orb"><svg><use href="#i-cpu"/></svg></div>
+                <div class="num">186</div>
+                <div class="lbl">E2E cases delivered solo in 4 weeks</div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+<section id="about">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-5 d-flex">
-                <div class="img-about img d-flex align-items-stretch">
-                    <div class="overlay">
-                        <div class="about-img text-center">
-                            <img src="images/Profile1.png" class="img-fluid rounded b-shadow-a" alt="">
-                        </div>
-                        <div class="skill-mf">
-                            <p class="title-s">Skills</p>
-                            <span>Java</span> <span class="pull-right">85%</span>
-                            <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-                            <span>Selenium WebDriver</span> <span class="pull-right">90%</span>
-                            <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
-                            <span>Manual Testing</span> <span class="pull-right">95%</span>
-                            <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
-                            <span>API Testing (Postman)</span> <span class="pull-right">85%</span>
-                            <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-                            <span>MySQL</span> <span class="pull-right">75%</span>
-                            <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
-                            <span>Burp Suite</span> <span class="pull-right">80%</span>
-                            <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
-                            <span>TestNG / Maven</span> <span class="pull-right">85%</span>
-                            <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-                        </div>
-                    </div>
-                </div>
+        <div class="section-head reveal">
+            <span class="eyebrow">// 01</span>
+            <h2>About Me</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="about-grid">
+            <div class="panel feature-card reveal">
+                <div class="photo"><img src="images/Jayesh_Profile_pic.png" alt="Jayesh Pagar"></div>
+                <div class="name">JAYESH PAGAR</div>
+                <div class="role">AI Consultant / Test Engineer</div>
             </div>
-            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-                <h2 class="mb-4">About Me</h2>
-                <p>Test Engineer with 2+ years of hands-on experience in automation and security testing across web, Android, and iOS platforms. Skilled in Java, Selenium WebDriver, API testing, Stripe payment gateway testing, and database validation. Experienced in Agile Scrum, with a track record of optimizing regression cycles, ensuring zero critical defects, and delivering secure, scalable releases.</p>
-                <ul class="about-info mt-4 px-md-0 px-2">
-                    <li class="d-flex"><span>Profile:</span> <span>Automation & Security Test Engineer</span></li>
-                    <li class="d-flex"><span>Domain:</span> <span>Web, Mobile, API, Security Testing</span></li>
-                    <li class="d-flex"><span>Education:</span> <span>PGDACC, BE Mechanical</span></li>
-                    <li class="d-flex"><span>Languages:</span> <span>English, Hindi, Marathi</span></li>
+            <div class="panel about-text reveal">
+                <h3>Professional Summary</h3>
+                <p>AI Consultant and agentic-systems architect who designs and builds autonomous AI systems from scratch &mdash; multi-agent pipelines with Claude (Opus), MCP, and Playwright that read plain-English requirements, generate production-grade code, self-heal on failure, run security scans, and auto-file defects with zero human authoring. I advise teams on where agentic AI creates measurable leverage &mdash; and deliver the working system, not just the strategy.</p>
+                <p>Track record: self-built agentic frameworks delivering 70&ndash;80% more deliverables at equivalent headcount, cutting authoring/regression cycles by up to 95%, and reducing post-release defects by 30%. Specializations span agentic automation architecture, AI-driven penetration testing &amp; vulnerability scanning (OWASP Top 10), and cloud/network security testing across Fintech, Banking, Healthcare, E-commerce, and SaaS. QA Excellence Award recipient for pioneering AI-first engineering.</p>
+                <ul class="info-list">
+                    <li><span>Focus</span><strong>Agentic AI, Autonomous QA, AI-Driven Security</strong></li>
+                    <li><span>Domains</span><strong>Fintech, Banking, Healthcare, E-commerce, SaaS</strong></li>
+                    <li><span>Location</span><strong>Nashik, India &mdash; open to relocation &amp; remote</strong></li>
+                    <li><span>Languages</span><strong>English, Hindi, Marathi</strong></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- RESUME -->
-<section class="ftco-section" id="resume-section">
+<!-- SKILLS -->
+<section id="skills">
     <div class="container">
-        <div class="row justify-content-center pb-5">
-            <div class="col-md-10 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Resume</h1>
-                <h2 class="mb-4">Professional Experience</h2>
+        <div class="section-head reveal">
+            <span class="eyebrow">// 02</span>
+            <h2>Skills</h2>
+            <div class="bar"></div>
+        </div>
+
+        <h3 class="sub-head reveal" style="margin-top:0">Core Consulting Competencies</h3>
+        <div class="tags reveal">
+            <span>Agentic AI Architecture (Built From Scratch)</span>
+            <span>Multi-Agent Orchestration (Claude + MCP)</span>
+            <span>Autonomous Code &amp; Test Generation</span>
+            <span>AI-Driven Penetration Testing &amp; Vulnerability Scanning</span>
+            <span>Marketplace Security Compliance &amp; Audit Evidence (Amazon SP-API, Walmart)</span>
+            <span>Prompt Engineering &amp; Reusable Master Prompts</span>
+            <span>Self-Healing Pipelines</span>
+            <span>AI Workflow &amp; CI/CD Integration</span>
+            <span>Production-Safety Guardrails</span>
+            <span>Stakeholder Advisory &amp; ROI Framing</span>
+        </div>
+
+        <h3 class="sub-head reveal">Technical Skills</h3>
+        <div class="grid-3">
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-cpu"/></svg></div>
+                <h3>Agentic AI &amp; LLM Systems</h3>
+                <p>Claude Opus / Claude Code (multi-agent orchestration), Model Context Protocol (MCP), Playwright MCP server, Autonomous Code- &amp; Test-Generation Agents, Prompt-Driven Architecture, Reusable Master Prompts, Lovable</p>
             </div>
-        </div>
-        
-        <div class="resume-wrap ftco-animate">
-            <span class="date">Dec 2024 – Present</span>
-            <h2>Junior Test Engineer</h2>
-            <span class="position">Netwin InfoSolutions Pvt. Ltd – Nashik, IN</span>
-            <ul>
-                <li>Tested Amazon & Walmart integrations, verifying accurate sync of products, orders, and inventory with EcomCircle platform.</li>
-                <li>Automated regression workflows in Selenium, improving efficiency and coverage.</li>
-                <li>Performed API testing (Postman), MySQL validation, and UI testing for Warehouse module.</li>
-                <li>Validated Stripe payment gateway integration and conducted web security testing using Burp Suite.</li>
-            </ul>
-        </div>
-
-        <div class="resume-wrap ftco-animate">
-            <span class="date">Aug 2023 – Dec 2024</span>
-            <h2>QA Associate</h2>
-            <span class="position">AI Alpha Tech – Nashik, IN</span>
-            <ul>
-                <li>Led end-to-end testing for Elevate360 platform (web & mobile).</li>
-                <li>Performed functional, UI, cross-browser, and database testing.</li>
-                <li>Validated payment workflows and managed Jira-based bug tracking.</li>
-            </ul>
-        </div>
-
-        <div class="resume-wrap ftco-animate">
-            <span class="date">Apr 2023 – Jul 2023</span>
-            <h2>Automation Test Engineer (Intern)</h2>
-            <span class="position">AI Varient – Bangalore, IN</span>
-            <ul>
-                <li>Automated 75% of regression test cases in Selenium, reducing testing time by 15%.</li>
-                <li>Performed bug reporting, unit testing, and collaborated in Agile sprints.</li>
-            </ul>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-zap"/></svg></div>
+                <h3>AI-Driven Automation</h3>
+                <p>Playwright (TypeScript/JavaScript), Selenium WebDriver, Self-Healing Selectors, Page Object Model, Idempotent Data Factories, Layer-Aware Healing Loops</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-shield"/></svg></div>
+                <h3>AI-Driven Security (VAPT)</h3>
+                <p>Autonomous Penetration Testing Agents, Vulnerability Scanning, OWASP Top 10, Burp Suite, SQL Injection, XSS, JWT/Auth Bypass, RBAC Exploitation, Remediation Validation, Audit Evidence Preparation, Amazon SP-API &amp; Walmart Marketplace Security Assessments</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-cloud"/></svg></div>
+                <h3>Cloud &amp; Network (Supabase)</h3>
+                <p>Row-Level Security (RLS) Policy Validation, Postgres Access-Control Testing, API/Network Exposure Scanning, Multi-Tenant Isolation, Auth &amp; Session Security</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-terminal"/></svg></div>
+                <h3>CI/CD &amp; DevOps</h3>
+                <p>GitHub Actions (self-hosted runners), CI-Ready Test Tagging, Automated Regression Pipelines, Trace-on-Retry, Artifact Retention</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-activity"/></svg></div>
+                <h3>Tooling &amp; Delivery</h3>
+                <p>Jira, ClickUp + ClickUp API Automation (auto-ticketing agents), Automated Excel / Markdown / PDF Report Generation</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-code"/></svg></div>
+                <h3>API, Payments &amp; Languages</h3>
+                <p>REST API Testing, Postman, Stripe Payment Gateway Validation. JavaScript, TypeScript, Python</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-layers"/></svg></div>
+                <h3>Platforms &amp; Databases</h3>
+                <p>Supabase, Postgres, Web (Desktop &amp; Mobile), Android, iOS</p>
+            </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-check"/></svg></div>
+                <h3>Methodologies</h3>
+                <p>Agile/Scrum, SDLC, STLC, Test-Driven Development</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- WORK PORTFOLIO -->
-<section class="ftco-section" id="work-section">
+<!-- EXPERIENCE -->
+<section id="experience">
     <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Work Portfolio</h1>
-                <h2 class="mb-4">Projects from Professional Experience</h2>
+        <div class="section-head reveal">
+            <span class="eyebrow">// 03</span>
+            <h2>Experience</h2>
+            <div class="bar"></div>
+        </div>
+
+        <div class="timeline">
+            <div class="tl-item upcoming panel reveal">
+                <div class="tl-top">
+                    <h3>AI Consultant</h3>
+                    <span class="date">Upcoming · Dec 2026</span>
+                </div>
+                <div class="org">Global technology company</div>
+                <div class="meta-line">Next milestone: from software quality and automation to AI consulting, business innovation and intelligent transformation</div>
+
+                <p class="up-lede">In December 2026 I join a global technology company as an AI Consultant – an opportunity to work alongside global leaders in the emerging era of AI, and to contribute to initiatives that explore how AI can transform business operations, sharpen decision-making and create measurable business value.</p>
+
+                <div class="sub-group">
+                    <h4>Where I will focus</h4>
+                    <div class="up-tags">
+                        <span>AI-driven business transformation</span>
+                        <span>Strategic problem-solving</span>
+                        <span>Business gap analysis</span>
+                        <span>Process automation</span>
+                        <span>Cost optimisation</span>
+                        <span>AI integration into business workflows</span>
+                    </div>
+                </div>
+
+                <div class="sub-group">
+                    <h4>What I aim to contribute</h4>
+                    <ul>
+                        <li>Help organisations move beyond traditional working methods toward intelligent, efficient and scalable solutions.</li>
+                        <li>Identify where AI creates measurable leverage – in operations, workflows and decisions – and turn it into practical, working systems.</li>
+                        <li>Bring a hands-on track record of building agentic AI systems from scratch, with the guardrails and human judgement that make them trustworthy.</li>
+                        <li>Collaborate with global leaders, learn from industry pioneers, and contribute to next-generation AI initiatives.</li>
+                    </ul>
+                </div>
+
+                <a href="ai-approach.html" class="up-link">See how I work with AI →</a>
+            </div>
+
+            <div class="tl-item panel reveal">
+                <div class="tl-top">
+                    <h3>AI Consultant / Test Engineer</h3>
+                    <span class="date">Dec 2024 – Present</span>
+                </div>
+                <div class="org">Netwin InfoSolutions Pvt. Ltd – Nashik, India (Onsite)</div>
+                <div class="meta-line">Projects: Banking (Loan Origination) | E-commerce SaaS | Healthcare | Fintech</div>
+
+                <div class="sub-group">
+                    <h4>Agentic AI Framework – Built From Scratch</h4>
+                    <ul>
+                        <li>Architected an autonomous AI framework from the ground up (Claude Opus + MCP + Playwright + TypeScript POM) that reads plain-English user stories and generates fully executable end-to-end suites with zero manual scripting – running 4 AI agents in parallel to scaffold 13 spec files and 225+ test cases in a single pass.</li>
+                        <li>Replaced traditional manual and hand-scripted delivery across the program, increasing total deliverables by 70–80% at equivalent team size and timeline while cutting authoring time by ~75%.</li>
+                        <li>Catalogued and automated 213 acceptance scenarios across 16 sub-modules, achieving 100% acceptance-criteria-to-test coverage spanning functional, boundary, RBAC, accessibility, and data-integrity types.</li>
+                        <li>Engineered self-healing logic – idempotent data factories, defensive selectors, state isolation – holding a 100% stable-tier pass rate without human maintenance of selectors.</li>
+                        <li>Automated the full defect lifecycle end-to-end via ClickUp API agents (reproduction steps, root-cause file/line references, screenshots, severity, assignee), eliminating ~100% of manual ticket-writing effort.</li>
+                        <li>Enforced production-safety guardrails (hard-blocked prod DB, namespaced auto-cleaned test data, append-only ledger protection) resulting in zero production-data incidents.</li>
+                    </ul>
+                </div>
+                <div class="sub-group">
+                    <h4>Marketplace Security &amp; Compliance – Amazon SP-API &amp; Walmart (EcomCircles, ongoing 2+ years)</h4>
+                    <ul>
+                        <li>Collaborated closely and continuously with Amazon and Walmart security/compliance teams on SP-API security assessments and Walmart marketplace security requirements – hands-on across security testing, vulnerability identification and validation, remediation verification, evidence preparation, and audit support across assessment cycles.</li>
+                        <li>Prepared and submitted security testing reports and supporting evidence that were successfully reviewed and approved by Amazon and Walmart, with assessments maintaining 12-month validity – including end-to-end remediation validation (re-testing fixes, verifying closure against assessment criteria) sustaining continuous audit readiness rather than one-off audit passes.</li>
+                    </ul>
+                </div>
+                <div class="sub-group">
+                    <h4>Agentic AI Security Testing (Penetration Testing &amp; Vulnerability Scanning)</h4>
+                    <ul>
+                        <li>Built and operated AI-driven penetration testing and vulnerability scanning agents covering the OWASP Top 10 – SQL injection, XSS, JWT/auth bypass, RBAC exploitation – embedding autonomous scans as a release gate after every production cycle.</li>
+                        <li>Hardened the multi-tenant RBAC model through agent-driven role-vs-route testing across 7 user roles; validated findings with Burp Suite to reduce false positives.</li>
+                    </ul>
+                </div>
+                <div class="sub-group">
+                    <h4>Cloud &amp; Network Testing (Supabase)</h4>
+                    <ul>
+                        <li>Designed automated coverage for Supabase Row-Level Security (RLS) policies, validating multi-tenant data isolation under adversarial and edge-case conditions; performed Postgres-level access-control and network-exposure testing, feeding findings into the auto-ticketing and regression pipeline.</li>
+                    </ul>
+                </div>
+                <div class="sub-group">
+                    <h4>AI-Assisted Development &amp; Impact</h4>
+                    <ul>
+                        <li>Shipped features end-to-end using Claude Code as the primary development agent, resolving UI/integration defects through Lovable – a dual-AI build-and-fix loop that reduced manual coding effort by ~60%.</li>
+                        <li>Surfaced 16 production-grade defects in one module (2 P1/Critical), including an XLSX parser bug causing 99% silent data loss (1,000-row uploads truncated to 9 rows), caught before it could corrupt customer catalogs.</li>
+                        <li>Led performance optimization (leads-page load reduced from 30+ seconds to ~4.6 seconds) and achieved a client-recognized 30% reduction in post-release defects with 100% functional requirement coverage.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tl-item featured panel reveal">
+                <div class="tl-top">
+                    <h3>Featured Engagement – AI-Driven QA Automation Framework</h3>
+                    <span class="date">Jul 2026 – Aug 2026</span>
+                </div>
+                <div class="org">SAHAYOG Banking Loan-Origination Platform</div>
+                <div class="stack">
+                    <span>Playwright</span><span>TypeScript</span><span>Claude Code + MCP</span><span>GitHub Actions (self-hosted)</span><span>Page Object Model</span>
+                </div>
+                <div class="sub-group">
+                    <ul>
+                        <li>Architected an agentic pipeline that turns a plain-English user story into production-grade code with no hand-written boilerplate – chaining 3 purpose-built subagents (test-planner, test-generator, test-healer) over a Playwright MCP server that gives each agent live control of the real browser, so locators are discovered against the running app instead of guessed. Codified the method as a 974-line reusable master prompt, making a new module a prompt run rather than a rewrite.</li>
+                        <li>Delivered 186 automated end-to-end cases across 8 banking modules solo in 4 weeks (~46 fully-delivered cases/week) covering analysis, exploratory testing, code, healing, and reporting.</li>
+                        <li>Cut the full regression cycle from ~12 hours of manual execution to a ~35-minute unattended CI run – a ~95% reduction, with the latest pipeline green at 147 passed / 0 failed / 11 skipped by design.</li>
+                        <li>Surfaced 16 pre-release defects (4 Major, 7 Minor) through AI-led exploratory testing before any automation was written – including a Major reliability bug where refreshing/bookmarking the Savings Application Dashboard silently rendered an empty state, plus two cross-module defect classes escalated as single shared fixes.</li>
+                        <li>Engineered a layer-aware self-healing loop that triages every failure to its true layer (stale locator → Page Object, missing wait → PO method, over-strict assertion → spec, broken session → auth setup) instead of mutating assertions until green – eliminating the "green but meaningless" failure mode; 0 false failures on the final run.</li>
+                        <li>Built the delivery system end to end: 13 reusable Page Objects (1,400+ LOC), storage-state auth (login once per run, not 186×), a self-hosted Windows GitHub Actions runner with trace-on-retry, and automated Excel/Markdown/PDF reporting – ~7,000 lines of living QA documentation alongside 3,700+ lines of TypeScript.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tl-item panel reveal">
+                <div class="tl-top">
+                    <h3>QA Associate</h3>
+                    <span class="date">Jun 2023 – Dec 2024</span>
+                </div>
+                <div class="org">AI Alpha Tech – Nashik, India (Onsite)</div>
+                <div class="sub-group">
+                    <ul>
+                        <li>Led end-to-end testing for enterprise web and mobile applications (Android &amp; iOS), designing, executing, and reporting in Jira with full SDLC-aligned coverage.</li>
+                        <li>Automated 75% of regression cases with Selenium WebDriver (15% faster sprints); performed SQL data validations, REST API testing (Postman), and Stripe payment-gateway validation for financial transaction accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tl-item panel reveal">
+                <div class="tl-top">
+                    <h3>Automation Test Engineer (Intern)</h3>
+                    <span class="date">Apr 2023 – Jul 2023</span>
+                </div>
+                <div class="org">AI Varient – Bangalore, India</div>
+                <div class="sub-group">
+                    <ul>
+                        <li>Built and maintained Selenium/Playwright (JavaScript) regression and smoke suites; contributed to POM frameworks and defect triage in Agile ceremonies.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/ecomcircle.jpg');"></a>
-                    <div class="text mt-3">
-                        <h3 class="heading">EcomCircle</h3>
-                        <p>Dropshipping automation platform – Tested integrations, APIs, and warehouse module with Selenium & Postman.</p>
+    </div>
+</section>
+
+<!-- KEY PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 04</span>
+            <h2>Key Projects</h2>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Featured case study: myEcodev x RENTRI -->
+        <article class="panel case reveal">
+            <div class="case-head">
+                <span class="domain">Featured Case Study · Italian Waste Traceability</span>
+                <h3>myEcodev × RENTRI</h3>
+                <p class="case-lede">Making a waste-management SaaS agree with the Italian government's register, using an AI-agent QA pipeline.</p>
+            </div>
+
+            <dl class="case-meta">
+                <div><dt>Role</dt><dd>QA Automation Engineer</dd></div>
+                <div><dt>Period</dt><dd>Sep – Oct 2026</dd></div>
+                <div><dt>Domain</dt><dd>Italian waste traceability</dd></div>
+                <div><dt>Stack</dt><dd>Claude Code, Playwright MCP agents, Playwright + TypeScript, pdf.js, Python, Azure DevOps, GitHub Actions</dd></div>
+            </dl>
+
+            <p>myEcodev runs the daily work of Italian vehicle dismantling yards. Since digital waste forms became mandatory, every form it issues has to match what RENTRI, the national waste register, records. I joined with no knowledge of the domain or the language and built an AI-assisted testing practice that checks both systems and the official PDF against each other, field by field.</p>
+
+            <h4 class="case-sub">Early results · first five weeks <small>(28 Sep – 29 Oct 2026)</small></h4>
+            <div class="case-stats">
+                <div><b>~160</b><span>Automated test cases across 6 user stories and 4 client or retest tasks</span></div>
+                <div><b>33</b><span>RENTRI parity cards – 1 critical, the rest prioritised and ordered</span></div>
+                <div><b>19</b><span>Defects filed to Azure DevOps with steps, environment and video</span></div>
+                <div><b>49</b><span>Screen recordings used as reproducible evidence</span></div>
+                <div><b>1 day</b><span>From no domain knowledge to a documented, reviewed KT</span></div>
+                <div><b>7 / 7</b><span>Import-confirmation acceptance checks passed</span></div>
+            </div>
+
+            <h4 class="case-sub">Sample of what the pipeline caught</h4>
+            <div class="table-wrap">
+                <table class="case-table">
+                    <thead><tr><th>Finding</th><th>Why it matters</th><th>Type</th></tr></thead>
+                    <tbody>
+                        <tr><td>An authorisation number with "/" is rewritten in Albo format on RENTRI and in the PDF</td><td>The legal document shows a different number from the one the yard entered</td><td><span class="badge">Defect</span></td></tr>
+                        <tr><td>The scarico form sends the waste code's default R12 activity next to the one the user ticked</td><td>RENTRI refuses the FIR, so the yard can't ship the waste</td><td><span class="badge">Defect</span></td></tr>
+                        <tr><td>Deleting a generated FIR removes it locally only, and it stays active on RENTRI</td><td>The two registers drift apart without any warning</td><td><span class="badge">Defect</span></td></tr>
+                        <tr><td>Route (percorso) and waste description are not sent to RENTRI</td><td>The official PDF is incomplete</td><td><span class="badge">Defect</span></td></tr>
+                        <tr><td>No acceptance, transhipment or cancellation from inside myEcodev</td><td>Users must switch to the government portal for core steps</td><td><span class="badge gap">Gap</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <details class="case-more">
+                <summary>Read the full case study</summary>
+
+                <h4 class="case-sub">1 · Context: two systems that must tell the same story</h4>
+                <div class="grid-3 case-cols">
+                    <div><h5>The product: myEcodev</h5><p>A web platform for <em>autodemolitori</em>, the yards that scrap end-of-life vehicles. It handles intake, scrapping certificates, de-registration from the PRA and RVFU registers, spare parts, invoicing and the legal waste paperwork. The interface is entirely in Italian.</p></div>
+                    <div><h5>The regulator: RENTRI</h5><p>Italy's national electronic register for waste traceability, run for the Ministry of Environment. Waste transport forms (FIR) are now issued digitally as xFIR documents and move through a signed life cycle: producer, transporter, receiver.</p></div>
+                    <div><h5>The risk</h5><p>An end-of-life car is hazardous waste (EER <code>16 01 04*</code>). If the form in myEcodev, the record on RENTRI and the official PDF disagree, the yard is carrying a legally wrong document. A sync bug here has legal consequences.</p></div>
+                </div>
+                <p class="flow-label">Digital FIR life cycle on RENTRI (simplified from about 20 states)</p>
+                <div class="flow">
+                    <span>Draft</span><i>→</i><span>Producer signs</span><i>→</i><span>In transport</span><i>→</i><span>Transhipment</span><i>→</i><span>Receiver acceptance</span><i>→</i><span class="end">Accepted · Partly rejected · Rejected</span><span class="alt">or Cancelled</span>
+                </div>
+
+                <h4 class="case-sub">2 · Starting point: no domain knowledge, no tests, two live portals</h4>
+                <p>When I joined, the automation repository held the Playwright template and an empty seed file. There were no test plans and no user stories. The business rules lived in Italian legislation, the RENTRI OpenAPI spec and the heads of the developers.</p>
+                <ul>
+                    <li><strong>Language and domain.</strong> Italian UI, legal terms (Formulario, Registro carico/scarico, MUD, Albo), and a regulator API with JWT auth, asynchronous operations and a rate limit of 100 requests per 5 seconds.</li>
+                    <li><strong>Two-sided truth.</strong> Each test has to drive myEcodev, then confirm the result on the RENTRI operator portal, then read the official PDF. A pass in one system proves nothing on its own.</li>
+                    <li><strong>Irreversible actions.</strong> Generating, signing or cancelling a FIR on RENTRI can't be undone, and some steps need a signing device the demo login does not have. The test design had to work around those steps without guessing.</li>
+                </ul>
+
+                <h4 class="case-sub">3 · AI architecture: an agent pipeline from user story to defect card</h4>
+                <p>Claude Code orchestrates specialised agents through the Playwright MCP server. Every stage writes a file the next stage reads, so the work can be reviewed and repeated. I own the prompts, the guardrails and every decision that needs judgement.</p>
+                <div class="pipeline" role="img" aria-label="Pipeline: inputs feed the Claude Code orchestrator, which drives Analyst, Planner, Generator and Healer agents against myEcodev, the RENTRI demo portal and the official PDF; evidence goes through a human review gate into Azure DevOps cards.">
+                    <div class="stage">
+                        <h6>Inputs</h6>
+                        <div class="node">User stories<small>US-001 to US-006</small></div>
+                        <div class="node">Client tickets<small>screen recordings</small></div>
+                        <div class="node">RENTRI Formulari<small>OpenAPI v1.0</small></div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="stage">
+                        <h6>Orchestrator</h6>
+                        <div class="node core">Claude Code<small>master prompt + persistent memory rules</small></div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="stage">
+                        <h6>Agents</h6>
+                        <div class="node">Analyst<small>ACs, states, rules · tags NOT VERIFIED / GAP</small></div>
+                        <div class="node">Planner<small>explores live app · writes test plan</small></div>
+                        <div class="node">Generator<small>Playwright tests on shared page objects</small></div>
+                        <div class="node heal">Healer<small>debugs DOM, console, network · fixes locators ↺</small></div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="stage">
+                        <h6>Systems under test</h6>
+                        <div class="node">myEcodev</div>
+                        <div class="node">RENTRI demo portal</div>
+                        <div class="node">Official PDF<small>pdf.js text check</small></div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="stage">
+                        <h6>Outputs</h6>
+                        <div class="node">Evidence<small>video, screenshots, logs, JSON</small></div>
+                        <div class="node gate">Human review gate<small>confirm, set severity, escalate decisions</small></div>
+                        <div class="node">Azure DevOps cards<small>CSV import + HTML cards</small></div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/mapmymaintenance.jpg');"></a>
-                    <div class="text mt-3">
-                        <h3 class="heading">MapMyMaintenance</h3>
-                        <p>Marine maintenance platform – Performed end-to-end testing on web & mobile apps, Stripe validation, and security testing.</p>
+                <p class="flow-label">Failures from the systems under test go to the Healer, which fixes locators and hands back to the Generator.</p>
+
+                <div class="table-wrap">
+                    <table class="case-table">
+                        <thead><tr><th>Layer</th><th>Component</th><th>What it does</th></tr></thead>
+                        <tbody>
+                            <tr><td>Inputs</td><td>User stories</td><td>US-001 to US-006: transport forms, intermediaries, transporters, bidirectional sync</td></tr>
+                            <tr><td>Inputs</td><td>Client tickets</td><td>Screen recordings from yards, analysed frame by frame</td></tr>
+                            <tr><td>Inputs</td><td>RENTRI API spec</td><td>Formulari OpenAPI v1.0, state model, error codes</td></tr>
+                            <tr><td>Orchestrator</td><td>Claude Code + master prompt</td><td>Step-by-step workflow: analyse, plan, generate, run, report. Persistent memory holds project rules, such as "attach to the logged-in RENTRI tab" and "a plain save does not resend to RENTRI"</td></tr>
+                            <tr><td>Agent</td><td>Analyst</td><td>Turns a story into ACs, a state list and business rules. Tags claims as verified, <code>[NOT VERIFIED]</code> or <code>[GAP]</code></td></tr>
+                            <tr><td>Agent</td><td>Planner</td><td>Explores the live app and writes the test plan in <code>specs/</code></td></tr>
+                            <tr><td>Agent</td><td>Generator</td><td>Writes Playwright tests on shared page objects</td></tr>
+                            <tr><td>Agent</td><td>Healer</td><td>Debugs failures from the DOM, console and network, then fixes locators</td></tr>
+                            <tr><td>Systems</td><td>myEcodev</td><td>ASP.NET WebForms, popup and iframe detail screens</td></tr>
+                            <tr><td>Systems</td><td>RENTRI demo portal</td><td>Operator wizard, read back field by field</td></tr>
+                            <tr><td>Systems</td><td>Official PDF</td><td>Text extracted with pdf.js and compared with both systems</td></tr>
+                            <tr><td>Outputs</td><td>Evidence</td><td>Video per scenario, screenshots, run logs, JSON results</td></tr>
+                            <tr><td>Outputs</td><td>Azure DevOps cards</td><td>Python scripts build the bug CSV import, HTML cards and attachment bundles</td></tr>
+                            <tr><td>Outputs</td><td>Human review gate</td><td>I confirm defects, set severity and escalate product decisions</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="case-sub">4 · My contribution: what I built and decided</h4>
+                <ul>
+                    <li><strong>Domain ramp-up in one day.</strong> Used AI-guided, read-only walkthroughs to map every module, the 8-tab vehicle file and the FIR screen. Wrote a 60-term Italian–English glossary and a RENTRI API guide that now serve as onboarding material.</li>
+                    <li><strong>Agent workflow and guardrails.</strong> Wrote the master prompt that chains analysis, planning, generation and healing. Set the safety rules: a list of high-risk buttons, read-only phases, never opening a second browser on RENTRI, and dates generated relative to today so tests don't fall into the historical-record path.</li>
+                    <li><strong>Cross-system test framework.</strong> Page objects for myEcodev and the RENTRI wizard, an authenticated setup stored once and reused, per-story configs and data files, PDF text assertions, and a GitHub Actions workflow.</li>
+                    <li><strong>Sync model.</strong> Established how sync actually works in both directions: create, update, import and pull. Confirmed with the team which behaviour is intended, for example that saving alone does not push to RENTRI.</li>
+                    <li><strong>Gap analysis.</strong> Compared RENTRI's capabilities against myEcodev and wrote 33 self-contained development cards. Each card has a priority, a status (defect, gap, investigation or decision needed) and a suggested build order.</li>
+                    <li><strong>Client ticket triage.</strong> Reproduced client-reported failures, such as an authorisation number sent to RENTRI as an Albo number, and separated real product defects from account configuration problems on production.</li>
+                </ul>
+
+                <h4 class="case-sub">5 · Impact and scale: why the approach holds up</h4>
+                <div class="grid-2 case-cols">
+                    <div>
+                        <h5>Impact</h5>
+                        <ul>
+                            <li>Data errors that would put wrong legal documents in front of inspectors were found before more customers hit them.</li>
+                            <li>Developers receive cards they can act on directly: exact steps, environment, expected versus actual, and a video.</li>
+                            <li>The product owner gets a ranked roadmap toward full RENTRI parity, with open decisions listed separately.</li>
+                            <li>Client tickets get a clear answer: product bug or account setup. That saves support and development time.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Scalability</h5>
+                        <ul>
+                            <li>A new user story enters the same pipeline. The prompt, page objects and evidence format are reused unchanged.</li>
+                            <li>The healer agent repairs locator drift, so a UI change costs minutes of maintenance instead of hours.</li>
+                            <li>The cross-check pattern (local app, regulator, PDF) carries over to the waste register, the MUD declaration and the RVFU vehicle register.</li>
+                            <li>Persistent memory keeps hard-won rules, so the next session or the next engineer starts with them.</li>
+                        </ul>
                     </div>
                 </div>
+
+                <h4 class="case-sub">6 · Lessons: what I'd tell the next team</h4>
+                <div class="grid-3 case-cols">
+                    <div><h5>Make AI tag its claims</h5><p>Asking agents to separate verified behaviour from assumptions kept unproven requirements out of the acceptance criteria.</p></div>
+                    <div><h5>Encode the rules, not just the steps</h5><p>Most early failures came from domain rules, such as past dates switching a form into historical mode. Writing those rules into memory stopped the same mistake from repeating.</p></div>
+                    <div><h5>Keep humans on irreversible actions</h5><p>Signing, cancelling and product-rule decisions stayed with people. The AI prepares the evidence and a person makes the call.</p></div>
+                </div>
+
+                <p class="case-note">Client names, credentials and internal identifiers are left out. All testing ran on the myEcodev test instance and the RENTRI demo environment.</p>
+            </details>
+        </article>
+
+        <!-- Case study: Agentic AI Mobile Test Automation Framework -->
+        <article class="panel case reveal">
+            <div class="case-head">
+                <span class="domain">Case Study · Mobile Banking (React Native, Android)</span>
+                <h3>Agentic AI Mobile Test Automation Framework</h3>
+                <p class="case-lede">From scripted Appium-style automation to a multi-agent AI QA pipeline that explores, plans, tests, automates, heals and reports on a production Android banking app.</p>
             </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/quizhaven.jpg');"></a>
-                    <div class="text mt-3">
-                        <h3 class="heading">Quiz Haven</h3>
-                        <p>Dynamic Q&A platform – Automated 60% of functional test cases, validated Stripe, and ensured responsive UI testing.</p>
+
+            <dl class="case-meta">
+                <div><dt>Role</dt><dd>QA Automation Engineer, owner of the framework design and the AI agent pipeline</dd></div>
+                <div><dt>AI stack</dt><dd>Claude Code · Claude sub-agents · Model Context Protocol (MCP) · mobile-mcp</dd></div>
+                <div><dt>Automation stack</dt><dd>Mobilewright (Playwright-style API for native mobile) · TypeScript · Node.js · ADB / UiAutomator</dd></div>
+                <div><dt>Reporting &amp; CI/CD</dt><dd>Playwright HTML + JSON · ExcelJS defect trackers · Markdown QA reports · GitHub Actions (hosted emulator + self-hosted real device)</dd></div>
+            </dl>
+
+            <p>Designed and built an agentic AI mobile QA framework: 7 Claude sub-agents connected to Android devices through MCP. The agents explore the app, write evidence-based user stories, plan and run tests, generate Page-Object automation, heal failures without weakening assertions, and publish Excel/Markdown defect reports, with module-gated GitHub Actions CI on emulators and real devices.</p>
+
+            <h4 class="case-sub">Project at a glance</h4>
+            <div class="case-stats">
+                <div><b>~450</b><span>Automated test cases across 16 ordered end-to-end suites</span></div>
+                <div><b>13</b><span>User stories covered (Onboarding → Sign-In → Sign-Up → Dashboard → Fund Transfer → Deposits …)</span></div>
+                <div><b>7</b><span>Specialised AI agents – one custom mobile agent per pipeline step</span></div>
+                <div><b>150+</b><span>Defects logged with steps, screenshots, logcat and severity</span></div>
+                <div><b>42 + 6</b><span>Page Objects and reusable components</span></div>
+                <div><b>85</b><span>Tests tagged <code>@known-defect</code>, kept red until the app is fixed</span></div>
+            </div>
+
+            <h4 class="case-sub">Architecture</h4>
+            <div class="layers" role="img" aria-label="Architecture: a human QA lead reviews and approves; the Claude Code orchestrator routes seven steps to sub-agents, each writing an artifact; agents use a tool layer of mobile-mcp, Bash and file I/O; tests execute through Mobilewright on an Android emulator in CI or a physical device on a self-hosted runner.">
+                <div class="layer gate">Human QA lead <small>review &amp; approve · master prompt</small></div>
+                <div class="layer-arrow">↓</div>
+                <div class="layer core">Orchestrator – Claude Code <small>routes each step to a specialised sub-agent, enforces the order</small></div>
+                <div class="layer-arrow">↓</div>
+                <div class="steps7">
+                    <div><em>Step 0</em><strong>BA Explorer</strong><code>qa/01 story</code></div>
+                    <div><em>Step 1</em><strong>Story Analyst</strong><code>qa/02 analysis</code></div>
+                    <div><em>Step 2</em><strong>Test Planner</strong><code>qa/03 plan</code></div>
+                    <div><em>Step 3</em><strong>Exploratory Tester</strong><code>qa/04 results</code></div>
+                    <div><em>Step 4</em><strong>Test Generator</strong><code>src/ + tests/</code></div>
+                    <div class="heal"><em>Step 5</em><strong>Test Healer</strong><code>test-results</code></div>
+                    <div><em>Step 6</em><strong>QA Reporter</strong><code>qa/06 report + .xlsx</code></div>
+                </div>
+                <div class="layer-arrow">↓</div>
+                <div class="layer">Tool layer <small>mobile-mcp (list elements, tap, type, swipe, screenshot, rotate, launch/terminate, read crashes) · Bash (adb, logcat, uiautomator dump, mobilewright CLI) · file I/O between steps</small></div>
+                <div class="layer-arrow">↓</div>
+                <div class="layer">Execution layer <small>Mobilewright (Playwright runner) + supervised driver · Android Emulator (CI) ⇄ Physical Android Device (self-hosted runner)</small></div>
+            </div>
+
+            <details class="case-more">
+                <summary>Read the full case study</summary>
+
+                <h4 class="case-sub">The problem with traditional mobile automation</h4>
+                <div class="flow">
+                    <span>BA writes story</span><i>→</i><span>QA writes Excel test cases</span><i>→</i><span>QA tests by hand</span><i>→</i><span>Engineer records locators</span><i>→</i><span>Scripts break on every build</span><i>→</i><span>Someone fixes locators</span><i>→</i><span class="alt">Results copied into a defect sheet</span>
+                </div>
+                <div class="table-wrap mt">
+                    <table class="case-table">
+                        <thead><tr><th>Problem</th><th>Impact</th></tr></thead>
+                        <tbody>
+                            <tr><td>Test cases written from the story, not from the app</td><td>Plans described behaviour the app did not have</td></tr>
+                            <tr><td>Locators hand-collected with Appium Inspector</td><td>Slow, brittle, broke on every UI change</td></tr>
+                            <tr><td>Flaky failures (driver drops, ANRs, OS dialogs) reported as app bugs</td><td>False defects, lost credibility with developers</td></tr>
+                            <tr><td>"Fixing" failing tests by loosening assertions</td><td>Real defects hidden behind green runs</td></tr>
+                            <tr><td>Reports compiled by hand</td><td>Hours per cycle, numbers that couldn't be traced</td></tr>
+                            <tr><td>Knowledge held by individuals</td><td>New modules needed the same person every time</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="case-sub">The agentic transformation</h4>
+                <p>Treat each QA role as an AI agent with its own tools, its own rules and its own output file. A human stays in the loop as the reviewer and decision-maker.</p>
+                <div class="table-wrap mt">
+                    <table class="case-table">
+                        <thead><tr><th>QA activity</th><th>Traditional approach</th><th>Agentic AI approach</th></tr></thead>
+                        <tbody>
+                            <tr><td>Requirement discovery</td><td>BA documents from memory/specs</td><td><strong>BA Explorer</strong> drives the real app and writes an evidence-tagged user story</td></tr>
+                            <tr><td>Story analysis</td><td>QA reads and interprets</td><td><strong>Story Analyst</strong> extracts entities, CRUD, state machines, business rules, ACs</td></tr>
+                            <tr><td>Test planning</td><td>Manual Excel test cases</td><td><strong>Test Planner</strong> generates functional and Android-specific coverage</td></tr>
+                            <tr><td>Manual / exploratory testing</td><td>Human taps through the app</td><td><strong>Exploratory Tester</strong> executes the plan on-device through MCP, capturing screenshots and crashes</td></tr>
+                            <tr><td>Script authoring</td><td>Engineer records locators, writes code</td><td><strong>Test Generator</strong> writes Page Objects, fixtures and specs that follow the house conventions</td></tr>
+                            <tr><td>Maintenance</td><td>Engineer debugs broken scripts</td><td><strong>Test Healer</strong> reads the view tree and logcat, fixes the right layer, and is forbidden to weaken assertions</td></tr>
+                            <tr><td>Reporting</td><td>Copy-paste into Excel</td><td><strong>QA Reporter</strong> builds Markdown reports and Excel defect trackers from machine-readable results</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="case-sub">Why a pipeline of agents, and not one big agent?</h4>
+                <div class="grid-2 case-cols">
+                    <div><h5>Separation of concerns</h5><p>Each agent has a narrow job, a restricted tool list and explicit rules. The Story Analyst has no device access by design, so it cannot "fill gaps" by guessing.</p></div>
+                    <div><h5>Auditable hand-offs</h5><p>Every step writes a file that the next step consumes (<code>qa/01 → qa/02 → qa/03 → qa/04 → src/tests → test-results → qa/06</code>). Any number in the final report can be traced back to its source.</p></div>
+                    <div><h5>Least privilege</h5><p>The Planner may look at the device but not drive flows. The Healer may edit code but has a hard rule against touching assertions.</p></div>
+                    <div><h5>Cheaper models where possible</h5><p>Sub-agents run on a faster model; the orchestrator keeps the expensive reasoning.</p></div>
+                </div>
+
+                <h4 class="case-sub">The seven agents</h4>
+                <p>Each agent is a Markdown definition in <code>.claude/agents/</code> with front-matter (name, description, allowed tools, model) and a body of operating rules.</p>
+                <div class="grid-2 case-cols agents">
+                    <div>
+                        <h5><em>0</em> BA Explorer</h5>
+                        <p>Documents the app by using it, not by guessing. Launches the app via MCP, walks each feature area, reads the accessibility tree and only screenshots when the tree is ambiguous. Exercises real paths: empty submits, invalid data, cancel, back, rotate. Every claim cites a screen/element; unverified inferences are tagged <code>[NOT VERIFIED]</code>, things the app does not expose are tagged <code>[GAP]</code>.</p>
+                        <code class="out">qa/01-user-story/US_0NN_&lt;Module&gt;.md</code>
+                    </div>
+                    <div>
+                        <h5><em>1</em> Story Analyst</h5>
+                        <p>Turns prose into a structured, testable model: entities × CRUD matrix, state transitions, business rules, integrations (camera, biometrics, location, deep links), and acceptance criteria categorised as functional / validation / state / integration / UI. Carries tags forward and never promotes an unverified claim to a rule.</p>
+                        <code class="out">qa/02-analysis/US_0NN-analysis.md</code>
+                    </div>
+                    <div>
+                        <h5><em>2</em> Test Planner</h5>
+                        <p>Produces the plan a senior QA engineer would write – happy path, negative, field validation, CRUD, business rules, UI states, persistence, async/race – plus Android-specific coverage a web-style plan misses: runtime permissions (grant / deny / deny-permanently / revoke mid-session), process death, rotation, font scale, dark mode, back-stack, deep links, offline and airplane-mode round trips, calls or notifications mid-flow.</p>
+                        <code class="out">qa/03-test-plan/US_0NN-test-plan.md</code>
+                    </div>
+                    <div>
+                        <h5><em>3</em> Exploratory Tester</h5>
+                        <p>Executes the plan on a real device like a human tester: Pass / Fail / Blocked with the actual result, a screenshot for every failure, and crash checks after each flow. Goes off-script where it is cheap – double-tap submit, rotate mid-form, background/resume, tap during loading – and classifies every deviation as App defect, Plan error or Environment issue.</p>
+                        <code class="out">qa/04-exploratory/US_0NN-exploratory.md</code>
+                    </div>
+                    <div>
+                        <h5><em>4</em> Test Generator</h5>
+                        <p>Converts the executed plan into maintainable automation, following the house style exactly: one Page Object per screen, shared Components, fixture registration, no raw locator in any spec, all data in <code>test-data.ts</code>. Locator preference: resource-id → content description → text. Uses MCP to inspect the live screen while writing locators, then runs the spec.</p>
+                        <code class="out">src/pages · src/components · src/fixtures · tests/e2e/*.spec.ts</code>
+                    </div>
+                    <div>
+                        <h5><em>5</em> Test Healer</h5>
+                        <p>Diagnoses failures from <code>results.json</code> plus screenshot, logcat, crash buffer and view tree, then fixes the correct layer. Golden rule: <em>"You may fix locators, waits and navigation. You may NEVER weaken, loosen or delete an assertion to make a test pass."</em> A real defect stays red and gets reported.</p>
+                        <code class="out">locator → Page Object · session → Auth fixture · app changed → Spec · driver drop / ANR / OS dialog → nothing (environment flake)</code>
+                    </div>
+                    <div>
+                        <h5><em>6</em> QA Reporter</h5>
+                        <p>Publishes numbers that are all traceable to a file: executive summary, statistics, manual vs automation results, healing activity, defect log, AC coverage matrix, recommendations – plus the Excel defect tracker built with ExcelJS.</p>
+                        <code class="out">qa/06-report/US_0NN-test-report.md · US_0NN-defects.xlsx</code>
                     </div>
                 </div>
+
+                <h4 class="case-sub">MCP: how the AI touches the phone</h4>
+                <div class="flow">
+                    <span>Claude agent</span><i>→ tool call →</i><span>mobile-mcp server</span><i>→</i><span>ADB / UiAutomator</span><i>→</i><span class="end">Android device</span><i>→ element tree / screenshot → back to agent</i>
+                </div>
+                <div class="table-wrap mt">
+                    <table class="case-table">
+                        <thead><tr><th>MCP tool</th><th>Used for</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>mobile_list_elements_on_screen</code></td><td>Primary "eyes": text, ids, bounds, state. Cheaper and more precise than vision</td></tr>
+                            <tr><td><code>mobile_take_screenshot</code></td><td>Evidence and visual ambiguity only</td></tr>
+                            <tr><td><code>mobile_click_on_screen_at_coordinates</code>, <code>mobile_type_keys</code>, <code>mobile_swipe_on_screen</code>, <code>mobile_press_button</code></td><td>Interaction</td></tr>
+                            <tr><td><code>mobile_launch_app</code>, <code>mobile_terminate_app</code>, <code>mobile_set_orientation</code>, <code>mobile_open_url</code></td><td>Lifecycle, rotation, deep links</td></tr>
+                            <tr><td><code>mobile_list_crashes</code>, <code>mobile_get_crash</code></td><td>Crash detection after each flow</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt"><strong>Design choice:</strong> Playwright's built-in planner/generator/healer agents are bound to browser tools and cannot drive a native app. This project re-implements the same three roles for Android and adds four more (BA, Analyst, Exploratory, Reporter). Browser concepts with no Android equivalent are replaced: <em>page refresh → app relaunch</em>, <em>storageState → device enrolment fixtures</em>, <em>network interception → real backend + device-state steps</em>.</p>
+
+                <h4 class="case-sub">Framework engineering – the deterministic layer the agents build on</h4>
+                <p>A Page Object Model designed for AI generation: one small, consistent contract means a generated page object looks like a hand-written one, and the healer always knows where a locator lives.</p>
+<pre class="code"><code>export abstract class BasePage {
+  /** A locator present only on this screen. Used to decide "am I here yet?". */
+  protected abstract readonly identifier: Locator;
+
+  async waitUntilLoaded(timeout = 15_000) { await this.identifier.waitFor({ state: 'visible', timeout }); return this; }
+
+  /** Matches both native "pkg:id/x" and React Native bare testID "x". */
+  protected byId(name: string): Locator {
+    return this.screen.getByTestId(name).or(this.screen.getByTestId(resId(name)));
+  }
+}</code></pre>
+                <div class="grid-2 case-cols mt">
+                    <div><h5>AI-readable failure evidence</h5><p><code>viewTree: 'on-failure'</code> attaches the accessibility tree to each failed test – this is what the Healer reads. JSON reporter for agents, HTML for humans; <code>device-log.ts</code> pulls logcat and the crash buffer, because on Android the "console" lives outside the test process.</p></div>
+                    <div><h5>Preflight: fail loudly</h5><p><code>global-setup.ts</code> blocks the run if the <code>.env</code> is missing, the driver is dead, the device is ambiguous or offline, or the app is not installed. Each had earlier shown up as a fake app defect – e.g. 20 tests silently skipped with exit 0, or 17 "failures" in 18 ms each.</p></div>
+                    <div><h5>Self-healing infrastructure</h5><p>A driver supervisor keeps the mobilecli driver alive and restarts it within about 1 s; with <code>retries: 1</code> a transient disconnect recovers on its own. A UiAutomator fallback reads elements the accessibility API cannot see (NAF-flagged MPIN boxes). Device targeting resolves name → serial so a run never executes on the wrong device.</p></div>
+                    <div><h5>Domain helpers</h5><p>Arithmetic-captcha solver; human-in-the-loop OTP hand-off (opt-in, so CI never hangs); copy-quality audit via <code>nspell</code>; PIN/OTP box and soft-keyboard handling; and APK intake – drop a new APK in <code>apps/</code> and it reinstalls cleanly and writes <code>app.json</code>. No config edit per build.</p></div>
+                    <div><h5>Ordered, state-aware regression</h5><p><code>run-ordered.mjs</code> runs the 16 suites in customer-journey order and inserts device-state steps between them (reinstall before Quick Deposit, re-enrol before Profile), so every suite starts from the state it needs.</p></div>
+                    <div><h5>Known-defect strategy</h5><p>Tests that reproduce an open bug are tagged <code>@known-defect</code>. <code>npm run test:gate</code> is the release gate and excludes them; <code>npm run test:known-defects</code> re-verifies them on each new build. Defects stay visible without blocking the pipeline.</p></div>
+                </div>
+
+                <h4 class="case-sub">CI/CD: module-gated pipeline</h4>
+                <div class="flow">
+                    <span>static (typecheck) + preflight</span><i>→</i><span>1 Onboarding</span><i>→</i><span class="alt">2 Sign-Up (skipped*)</span><i>→</i><span>3 Sign-In</span><i>→</i><span>4 Dashboard</span><i>→</i><span class="end">summary</span><span class="alt">known-defects (non-gating)</span>
+                </div>
+                <div class="table-wrap mt">
+                    <table class="case-table">
+                        <thead><tr><th>Target</th><th>Runner</th><th>Coverage</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>emulator</code> (default)</td><td>GitHub-hosted Ubuntu + Android emulator</td><td>Onboarding + backend-independent Sign-In UI/validation</td></tr>
+                            <tr><td><code>device</code></td><td>Self-hosted runner with the physical phone</td><td>Full suite including authenticated flows</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="flow-label">*Sign-Up is a visible, always-skipped job. Each real registration permanently consumes a bank account and needs an SMS OTP, so it runs only as a controlled, data-driven live test fed from an Excel sheet of fresh customers.</p>
+
+                <h4 class="case-sub">Responsible-AI guardrails</h4>
+                <p>The agents are deliberately constrained. These rules came from real incidents during the project:</p>
+                <div class="table-wrap mt">
+                    <table class="case-table">
+                        <thead><tr><th>Guardrail</th><th>Why it exists</th></tr></thead>
+                        <tbody>
+                            <tr><td>Evidence tagging (<code>[NOT VERIFIED]</code>, <code>[GAP]</code>)</td><td>Stops the LLM from inventing acceptance criteria to fill a template</td></tr>
+                            <tr><td>No assertion weakening in healing</td><td>A green run with a hidden defect is the worst outcome the pipeline can produce</td></tr>
+                            <tr><td>Defect / Plan error / Environment triage</td><td>Keeps flaky infrastructure out of the defect log</td></tr>
+                            <tr><td>Read every on-screen message verbatim</td><td>An unread "account locked" banner once caused a chain of repeated failed logins</td></tr>
+                            <tr><td>Lockout budget (<code>retries: 0</code>, one login per file)</td><td>Prevents automation from locking real customer accounts</td></tr>
+                            <tr><td>Read-only tests on real accounts</td><td>No money-moving taps in suites that run against real balances</td></tr>
+                            <tr><td>Secrets &amp; customer data never committed</td><td><code>.env</code> and <code>regression/data/</code> are git-ignored</td></tr>
+                            <tr><td>Human approval for destructive/one-shot flows</td><td>Registration, fund transfers and OTPs need a person in the loop</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="case-sub">End-to-end example: Fund Transfer module</h4>
+                <ol class="steps-list">
+                    <li><strong>QA lead:</strong> "Run the pipeline for Fund Transfer."</li>
+                    <li><strong>BA Explorer</strong> walks Own-Account, Other-Account, IMPS and NEFT screens on the device and writes <code>US_007</code> with evidence. It flags beneficiary limits it could not trigger as <code>[GAP]</code>.</li>
+                    <li><strong>Story Analyst</strong> models the Beneficiary entity (Create/Modify/Close), the transfer state machine, and limit/PIN rules.</li>
+                    <li><strong>Test Planner</strong> produces 60+ cases, including rotation mid-form, process death on the OTP screen and offline submit.</li>
+                    <li><strong>Exploratory Tester</strong> executes them on the phone. It finds, among others, that IMPS and NEFT "Close Beneficiary" ask for a Transaction PIN but offer no "Forget Transaction PIN?" link, and logs both with screenshots.</li>
+                    <li><strong>Test Generator</strong> writes the IMPS/NEFT page objects and <code>14-fund-transfer.spec.ts</code> (64 tests); the two findings become <code>@known-defect</code> tests.</li>
+                    <li><strong>Test Healer</strong> fixes two locators broken by a build change and refuses to touch the known-defect assertions.</li>
+                    <li><strong>QA Reporter</strong> publishes <code>US_007-test-report.md</code> and <code>US_007-defects.xlsx</code> for the development team.</li>
+                </ol>
+
+                <h4 class="case-sub">Outcomes &amp; impact</h4>
+                <div class="grid-3 case-cols">
+                    <div><h5>Coverage</h5><p>Around 450 automated cases across 13 stories, including the Android dimensions (permissions, process death, rotation, connectivity) that manual cycles usually skip.</p></div>
+                    <div><h5>Speed</h5><p>A new module goes from "unknown screen" to evidence-backed story, plan, exploratory results, automation and report in one guided pipeline run instead of several manual hand-offs.</p></div>
+                    <div><h5>Trust</h5><p>Every reported number traces back to a file. Environment flake is separated from real defects, and known defects are tracked and re-verified each build.</p></div>
+                    <div><h5>Maintainability</h5><p>A single POM contract, preflight checks and a supervised driver mean a new APK needs no config change – drop it in and run intake.</p></div>
+                    <div><h5>Knowledge capture</h5><p>The operating know-how lives in agent definitions and the master prompt, so it is not tied to one person.</p></div>
+                </div>
+
+                <h4 class="case-sub">Repository map</h4>
+<pre class="code"><code>.claude/agents/          7 mobile QA agents (+ stock Playwright web agents, kept for reference)
+prompts/master-prompt.md End-to-end pipeline instructions (Steps 0–6)
+User_Stories/            13 source user stories
+qa/01 … 06               Per-step artifacts: story → analysis → plan → exploratory → report
+src/pages/               42 Page Objects (BasePage contract)
+src/components/          Shared dialogs and pickers
+src/fixtures/            Typed fixtures: pages, session, enrolment
+src/utils/               adb, captcha, OTP, view-hierarchy, device-log, text-quality …
+src/global-setup.ts      Preflight checks
+tests/e2e/               16 ordered suites (01-landing … 16-deposits)
+scripts/                 driver supervisor, app intake, ordered runner, defect tracker, emulator
+.github/workflows/       Module-gated CI (emulator + self-hosted device)
+mobilewright.config.ts   Runner config: device pinning, reporters, view-tree on failure</code></pre>
+
+                <h4 class="case-sub">Skills demonstrated</h4>
+                <div class="grid-2 case-cols">
+                    <div><h5>Agentic AI / LLM engineering</h5><p>Multi-agent pipeline design · role-scoped sub-agents with least-privilege tool access · prompt engineering for evidence-based outputs · MCP tool integration · hallucination guardrails · human-in-the-loop design.</p></div>
+                    <div><h5>Test automation</h5><p>Native Android automation (Mobilewright / Playwright runner) · Page Object Model · fixtures · data-driven testing (Excel) · flaky-test root-cause analysis · self-healing infrastructure · ADB / UiAutomator / logcat.</p></div>
+                    <div><h5>QA practice</h5><p>Requirement analysis · risk-based and Android-specific test design · exploratory testing · defect lifecycle and re-verification · traceable reporting.</p></div>
+                    <div><h5>DevOps</h5><p>GitHub Actions · module-gated pipelines · hosted emulators and self-hosted device runners · preflight environment validation.</p></div>
+                </div>
+            </details>
+        </article>
+
+        <!-- Case study: SAHAYOG -->
+        <article class="panel case reveal">
+            <div class="case-head">
+                <span class="domain">Case Study · Banking / Loan Origination</span>
+                <h3>SAHAYOG</h3>
+                <p class="case-lede">An AI-driven QA automation framework that turns a plain-English user story into production-grade test code – delivered solo in 4 weeks.</p>
             </div>
+
+            <dl class="case-meta">
+                <div><dt>Role</dt><dd>AI Consultant / Test Engineer (solo delivery)</dd></div>
+                <div><dt>Period</dt><dd>Jul – Aug 2026</dd></div>
+                <div><dt>Domain</dt><dd>Banking loan-origination platform</dd></div>
+                <div><dt>Stack</dt><dd>Playwright, TypeScript, Claude Code + MCP, GitHub Actions (self-hosted), Page Object Model</dd></div>
+            </dl>
+
+            <p>I architected an agentic pipeline that turns a plain-English user story into production-grade code with no hand-written boilerplate – chaining 3 purpose-built subagents (test-planner, test-generator, test-healer) over a Playwright MCP server that gives each agent live control of the real browser, so locators are discovered against the running app instead of guessed.</p>
+
+            <h4 class="case-sub">Results</h4>
+            <div class="case-stats">
+                <div><b>186</b><span>Automated end-to-end cases across 8 banking modules, delivered solo in 4 weeks</span></div>
+                <div><b>~95%</b><span>Regression cycle cut from ~12 hours of manual execution to a ~35-minute unattended CI run</span></div>
+                <div><b>147 / 0 / 11</b><span>Latest pipeline: passed / failed / skipped by design</span></div>
+                <div><b>16</b><span>Pre-release defects surfaced (4 Major, 7 Minor) before any automation was written</span></div>
+                <div><b>~46 / week</b><span>Fully-delivered cases covering analysis, exploratory testing, code, healing and reporting</span></div>
+                <div><b>0</b><span>False failures on the final run</span></div>
+            </div>
+
+            <h4 class="case-sub">Agent pipeline</h4>
+            <div class="pipeline" role="img" aria-label="Pipeline: a plain-English user story goes to a test-planner, test-generator and test-healer subagent, which drive the real browser through a Playwright MCP server; tests run on a self-hosted GitHub Actions runner that produces Excel, Markdown and PDF reports.">
+                <div class="stage">
+                    <h6>Input</h6>
+                    <div class="node core">Plain-English user story<small>974-line reusable master prompt</small></div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <h6>Subagents</h6>
+                    <div class="node">test-planner</div>
+                    <div class="node">test-generator</div>
+                    <div class="node heal">test-healer<small>layer-aware self-healing ↺</small></div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <h6>Browser control</h6>
+                    <div class="node core">Playwright MCP server<small>live control of the real browser – locators discovered, not guessed</small></div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <h6>Framework</h6>
+                    <div class="node">13 reusable Page Objects<small>1,400+ LOC</small></div>
+                    <div class="node">Storage-state auth<small>login once per run, not 186×</small></div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <h6>CI &amp; reporting</h6>
+                    <div class="node">Self-hosted Windows GitHub Actions runner<small>trace-on-retry</small></div>
+                    <div class="node gate">Excel / Markdown / PDF reports</div>
+                </div>
+            </div>
+
+            <details class="case-more">
+                <summary>Read the full case study</summary>
+
+                <h4 class="case-sub">Layer-aware self-healing</h4>
+                <p>Instead of mutating assertions until green, the healing loop triages every failure to its true layer – eliminating the "green but meaningless" failure mode.</p>
+                <div class="table-wrap">
+                    <table class="case-table">
+                        <thead><tr><th>Failure</th><th>Fixed in</th></tr></thead>
+                        <tbody>
+                            <tr><td>Stale locator</td><td>Page Object</td></tr>
+                            <tr><td>Missing wait</td><td>Page Object method</td></tr>
+                            <tr><td>Over-strict assertion</td><td>Spec</td></tr>
+                            <tr><td>Broken session</td><td>Auth setup</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="case-sub">What AI-led exploratory testing caught</h4>
+                <div class="table-wrap">
+                    <table class="case-table">
+                        <thead><tr><th>Finding</th><th>Why it matters</th><th>Type</th></tr></thead>
+                        <tbody>
+                            <tr><td>Refreshing or bookmarking the Savings Application Dashboard silently rendered an empty state</td><td>A Major reliability bug users would hit on any reload</td><td><span class="badge">Major</span></td></tr>
+                            <tr><td>Two cross-module defect classes</td><td>Escalated as single shared fixes instead of many separate bugs</td><td><span class="badge gap">Escalated</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="case-sub">What I built</h4>
+                <ul>
+                    <li><strong>Agentic pipeline.</strong> 3 purpose-built subagents (test-planner, test-generator, test-healer) chained over a Playwright MCP server.</li>
+                    <li><strong>Reusable method.</strong> Codified the approach as a 974-line reusable master prompt, making a new module a prompt run rather than a rewrite.</li>
+                    <li><strong>Framework.</strong> 13 reusable Page Objects (1,400+ LOC) and storage-state auth (login once per run, not 186×).</li>
+                    <li><strong>CI.</strong> A self-hosted Windows GitHub Actions runner with trace-on-retry.</li>
+                    <li><strong>Reporting and documentation.</strong> Automated Excel/Markdown/PDF reporting – ~7,000 lines of living QA documentation alongside 3,700+ lines of TypeScript.</li>
+                </ul>
+            </details>
+        </article>
+
+        <!-- Case study: EcomCircles -->
+        <article class="panel case reveal">
+            <div class="case-head">
+                <span class="domain">Case Study · E-commerce SaaS</span>
+                <h3>EcomCircles</h3>
+                <p class="case-lede">Marketplace security and compliance for Amazon SP-API and Walmart – assessments approved and kept audit-ready for 2+ years.</p>
+            </div>
+
+            <dl class="case-meta">
+                <div><dt>Role</dt><dd>AI Consultant / Test Engineer</dd></div>
+                <div><dt>Period</dt><dd>Ongoing, 2+ years</dd></div>
+                <div><dt>Domain</dt><dd>E-commerce SaaS</dd></div>
+                <div><dt>Focus</dt><dd>Amazon SP-API &amp; Walmart marketplace security assessments, API data sync, load performance</dd></div>
+            </dl>
+
+            <p>I collaborate closely and continuously with Amazon and Walmart security/compliance teams on SP-API security assessments and Walmart marketplace security requirements – hands-on across security testing, vulnerability identification and validation, remediation verification, evidence preparation, and audit support across assessment cycles.</p>
+
+            <h4 class="case-sub">Results</h4>
+            <div class="case-stats">
+                <div><b>Approved</b><span>Security testing reports and evidence reviewed and approved by Amazon and Walmart</span></div>
+                <div><b>12 months</b><span>Assessment validity maintained across cycles</span></div>
+                <div><b>2+ years</b><span>Continuous audit readiness rather than one-off audit passes</span></div>
+            </div>
+
+            <h4 class="case-sub">Assessment cycle</h4>
+            <div class="flow">
+                <span>Security testing</span><i>→</i><span>Vulnerability identification &amp; validation</span><i>→</i><span>Remediation verification</span><i>→</i><span>Evidence preparation</span><i>→</i><span>Audit support</span><i>→</i><span class="end">Approved · 12-month validity</span>
+            </div>
+
+            <h4 class="case-sub">What I do</h4>
+            <div class="grid-3 case-cols">
+                <div><h5>Marketplace security</h5><p>Security testing, vulnerability identification and validation against Amazon SP-API and Walmart marketplace security requirements.</p></div>
+                <div><h5>Remediation validation</h5><p>End-to-end: re-testing fixes and verifying closure against assessment criteria.</p></div>
+                <div><h5>Data sync at scale</h5><p>Agent-driven validation of high-volume API data synchronization and load performance at scale.</p></div>
+            </div>
+        </article>
+
+        <!-- Compact case studies -->
+        <div class="grid-2 case-pair">
+            <article class="panel case compact reveal">
+                <div class="case-head">
+                    <span class="domain">Case Study · Healthcare</span>
+                    <h3>MapMyMaintenance</h3>
+                    <p class="case-lede">Multi-platform AI-agent testing, Stripe payment validation, and patient-data security compliance.</p>
+                </div>
+                <div class="case-cols focus">
+                    <div><div class="icon-orb"><svg><use href="#i-layers"/></svg></div><h5>Multi-platform AI-agent testing</h5></div>
+                    <div><div class="icon-orb"><svg><use href="#i-zap"/></svg></div><h5>Stripe payment validation</h5></div>
+                    <div><div class="icon-orb"><svg><use href="#i-shield"/></svg></div><h5>Patient-data security compliance</h5></div>
+                </div>
+            </article>
+            <article class="panel case compact reveal">
+                <div class="case-head">
+                    <span class="domain">Case Study · Fintech</span>
+                    <h3>Donor X</h3>
+                    <p class="case-lede">AI-driven security testing for donation-transaction compliance.</p>
+                </div>
+                <div class="case-cols focus">
+                    <div><div class="icon-orb"><svg><use href="#i-terminal"/></svg></div><h5>SQL injection</h5></div>
+                    <div><div class="icon-orb"><svg><use href="#i-cpu"/></svg></div><h5>JWT bypass</h5></div>
+                    <div><div class="icon-orb"><svg><use href="#i-shield"/></svg></div><h5>RBAC flaw detection</h5></div>
+                </div>
+            </article>
         </div>
     </div>
 </section>
 
 <!-- ACADEMIC PROJECTS -->
-<section class="ftco-section" id="project-section">
+<section id="academic">
     <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Academic Projects</h1>
-                <h2 class="mb-4">Highlighted Academic Work</h2>
-            </div>
+        <div class="section-head reveal">
+            <span class="eyebrow">// 05</span>
+            <h2>Academic Projects</h2>
+            <div class="bar"></div>
         </div>
-        <div class="row d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="https://github.com/jayeshpagar070/Django-Ecommerce_Website" class="block-20 zoom-effect" style="background-image:url('images/project_4.jpeg');"></a>
-                    <div class="text mt-3">
-                        <h3 class="heading">Ecommerce Website</h3>
-                        <p>Automated UI & functional test cases using Selenium; performed regression after deployments with Python scripts.</p>
-                    </div>
+        <div class="grid-3">
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/project_4.jpeg" alt="Ecommerce Website project" loading="lazy"></div>
+                <div class="body">
+                    <h3>Ecommerce Website</h3>
+                    <p>Automated UI &amp; functional test cases using Selenium; performed regression after deployments with Python scripts.</p>
+                    <a class="link" href="https://github.com/jayeshpagar070/Django-Ecommerce_Website" target="_blank" rel="noopener">View on GitHub →</a>
                 </div>
             </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="https://github.com/jayeshpagar070/Data-Engineering-" class="block-20 zoom-effect" style="background-image:url('images/project_4.jpeg');"></a>
-                    <div class="text mt-3">
-                        <h3 class="heading">ETL Pipeline</h3>
-                        <p>Built ETL pipeline in Python to migrate and transform employee data from CSV to MySQL in Dockerized setup.</p>
-                    </div>
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/project_4.jpeg" alt="ETL Pipeline project" loading="lazy"></div>
+                <div class="body">
+                    <h3>ETL Pipeline</h3>
+                    <p>Built ETL pipeline in Python to migrate and transform employee data from CSV to MySQL in Dockerized setup.</p>
+                    <a class="link" href="https://github.com/jayeshpagar070/Data-Engineering-" target="_blank" rel="noopener">View on GitHub →</a>
                 </div>
             </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/project_2.jpeg');"></a>
-                    <div class="text mt-3">
-                        <h3 class="heading">AI-based Tool Detection</h3>
-                        <p>Developed AI-based inspection system for mechanical tool detection using Python, AI & ML.</p>
-                    </div>
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/project_2.jpeg" alt="AI-based Tool Detection project" loading="lazy"></div>
+                <div class="body">
+                    <h3>AI-based Tool Detection</h3>
+                    <p>Developed AI-based inspection system for mechanical tool detection using Python, AI &amp; ML.</p>
                 </div>
             </div>
         </div>
@@ -282,114 +1031,202 @@
 </section>
 
 <!-- CERTIFICATES -->
-<section class="ftco-section" id="certificates-section">
+<section id="certificates">
     <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Certificates</h1>
-                <h2 class="mb-4">Professional Certifications</h2>
+        <div class="section-head reveal">
+            <span class="eyebrow">// 06</span>
+            <h2>Certifications &amp; Education</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="grid-4">
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/cr_1.png" alt="Python certificate" loading="lazy"></div>
+                <div class="body"><h3>Python – Spoken Tutorial, IIT Bombay</h3></div>
+            </div>
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/cr_2 (1).jpg" alt="Software Testing certificate" loading="lazy"></div>
+                <div class="body"><h3>Software Testing – ExcelR</h3></div>
+            </div>
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/cr_3 (2).jpg" alt="Selenium Cucumber certificate" loading="lazy"></div>
+                <div class="body"><h3>Selenium Cucumber – Java</h3></div>
+            </div>
+            <div class="panel img-card reveal">
+                <div class="thumb"><img src="images/cr_5 (4).jpg" alt="AWS Solution Architecture certificate" loading="lazy"></div>
+                <div class="body"><h3>Solution Architecture – AWS</h3></div>
             </div>
         </div>
-        <div class="row d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/cr_1.png');"></a>
-                    <div class="text mt-3"><h3 class="heading">Python – IIT Bombay</h3></div>
-                </div>
+        <div class="grid-2" style="margin-top:22px">
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-award"/></svg></div>
+                <h3>Also Certified</h3>
+                <ul>
+                    <li>Google Analytics – Google</li>
+                </ul>
             </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/cr_2 (1).jpg');"></a>
-                    <div class="text mt-3"><h3 class="heading">Software Testing – ExcelR</h3></div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/cr_3 (2).jpg');"></a>
-                    <div class="text mt-3"><h3 class="heading">Selenium Cucumber – Java</h3></div>
-                </div>
-            </div>
-			<div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="#" class="block-20 zoom-effect" style="background-image:url('images/cr_5 (4).jpg');"></a>
-                    <div class="text mt-3"><h3 class="heading">Solution Architecture – AWS </h3></div>
-                </div>
+            <div class="panel reveal">
+                <div class="icon-orb"><svg><use href="#i-layers"/></svg></div>
+                <h3>Education</h3>
+                <ul>
+                    <li>PGDACC Cloud Computing – ESDS (8.62)</li>
+                    <li>B.E. Mechanical – SPPU (8.89)</li>
+                    <li>Diploma – MSBTE (88.62%)</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section class="ftco-section" id="achievements-section">
+<section id="achievements">
     <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Achievements</h1>
-                <h2 class="mb-4">Key Milestones</h2>
-            </div>
+        <div class="section-head reveal">
+            <span class="eyebrow">// 07</span>
+            <h2>Achievements</h2>
+            <div class="bar"></div>
         </div>
-        <ul>
-            <li>Received client recommendation for achieving 100% functional requirement coverage with zero critical defects in production.</li>
-            <li>Reduced post-release defects by 30% through secure, reliable build releases.</li>
-        </ul>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<!-- CONTACT -->
-<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Contact</h1>
-                <h2 class="mb-4">Get in Touch</h2>
-            </div>
-        </div>
-        <div class="row block-9">
-            <div class="col-md-6 order-md-last d-flex">
-                <!-- Working Formspree Form -->
-                <form action="https://formspree.io/f/xqalwybk" method="POST" class="bg-light p-4 p-md-5 contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <div class="achieve-grid">
+            <figure class="panel feature-card award-card reveal">
+                <div class="photo"><img src="images/qa-award.jpg" alt="Jayesh Pagar receiving the QA Excellence Award at Netwin InfoSolutions" loading="lazy"></div>
+                <figcaption>
+                    <div class="name">QA EXCELLENCE AWARD</div>
+                    <div class="role">Netwin InfoSolutions</div>
+                </figcaption>
+            </figure>
+            <div class="achieve-list">
+                <div class="panel achievement-row reveal">
+                    <div class="icon-orb"><svg><use href="#i-award"/></svg></div>
+                    <div>
+                        <h3>QA Excellence Award</h3>
+                        <p>Netwin InfoSolutions, for pioneering AI-driven quality engineering and automation initiatives.</p>
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="panel achievement-row reveal">
+                    <div class="icon-orb"><svg><use href="#i-trend"/></svg></div>
+                    <div>
+                        <h3>70–80% More Deliverables</h3>
+                        <p>Via self-built agentic AI framework; ~95% regression-cycle reduction (SAHAYOG); 100% functional coverage and 30% fewer post-release defects – both client-recognized.</p>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="panel achievement-row reveal">
+                    <div class="icon-orb"><svg><use href="#i-check"/></svg></div>
+                    <div>
+                        <h3>Approved Amazon &amp; Walmart Assessments</h3>
+                        <p>Security testing reports and evidence for EcomCircles reviewed and approved by Amazon SP-API &amp; Walmart, maintaining 12-month validity across cycles.</p>
                     </div>
-                    <div class="form-group">
-                        <textarea name="message" class="form-control" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-6 d-flex">
-                <div class="info bg-light p-4">
-                    <p><span>Address:</span> Pune, Maharashtra, India</p>
-                    <p><span>Phone:</span> <a href="tel://9511996248">+91 95119 96248</a></p>
-                    <p><span>Email:</span> <a href="mailto:jayeshpagar070@gmail.com">jayeshpagar070@gmail.com</a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// 08</span>
+            <h2>Get in Touch</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="panel reveal">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><div class="icon-orb"><svg><use href="#i-pin"/></svg></div><div><span>Location</span><strong>Nashik, Maharashtra, India</strong></div></li>
+                    <li><div class="icon-orb"><svg><use href="#i-phone"/></svg></div><div><span>Phone</span><a href="tel:+919511996248">+91 95119 96248</a></div></li>
+                    <li><div class="icon-orb"><svg><use href="#i-mail"/></svg></div><div><span>Email</span><a href="mailto:jayeshpagar070@gmail.com">jayeshpagar070@gmail.com</a></div></li>
+                    <li><div class="icon-orb"><svg><use href="#i-linkedin"/></svg></div><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/jayesh-pagar-333019231" target="_blank" rel="noopener">jayesh-pagar-333019231</a></div></li>
+                    <li><div class="icon-orb"><svg><use href="#i-github"/></svg></div><div><span>GitHub</span><a href="https://github.com/jayeshpagar070" target="_blank" rel="noopener">jayeshpagar070</a></div></li>
+                    <li><div class="icon-orb"><svg><use href="#i-globe"/></svg></div><div><span>Availability</span><strong>Open to relocation &amp; remote work</strong></div></li>
+                </ul>
+            </div>
+            <form action="https://formspree.io/f/xqalwybk" method="POST" class="panel reveal">
+                <h3>Send a Message</h3>
+                <div class="form-row">
+                    <div class="field"><input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required></div>
+                    <div class="field"><input type="email" name="_replyto" placeholder="Your Email" aria-label="Your Email" required></div>
+                </div>
+                <div class="field"><input type="text" name="subject" placeholder="Subject" aria-label="Subject" required></div>
+                <div class="field"><textarea name="message" placeholder="Message" aria-label="Message" required></textarea></div>
+                <button type="submit" class="btn btn-primary"><svg><use href="#i-send"/></svg>Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
 <footer>
-<!-- JS -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="js/main.js"></script>
+    <div class="container foot">
+        <span>© <span id="year">2026</span> Jayesh Pagar · AI Consultant &amp; Agentic AI Systems Architect</span>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/jayesh-pagar-333019231" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+            <a href="https://github.com/jayeshpagar070" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a href="mailto:jayeshpagar070@gmail.com" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Typing animation
+    const typingElement = document.getElementById('typing-animation');
+    const texts = ["AI Consultant", "Agentic AI Systems Architect", "Autonomous QA Engineer", "AI Security Tester"];
+    let idx = 0;
+    function type() {
+        const text = texts[idx];
+        let i = 0;
+        typingElement.textContent = "";
+        const interval = setInterval(() => {
+            typingElement.textContent += text[i];
+            i++;
+            if (i === text.length) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    idx = (idx + 1) % texts.length;
+                    type();
+                }, 1500);
+            }
+        }, 110);
+    }
+    type();
+
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+        const open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+    });
+    links.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') links.classList.remove('open');
+    });
+
+    // Reveal on scroll + active nav link
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach((el) => io.observe(el));
+
+        const navLinks = links.querySelectorAll('a');
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        document.querySelectorAll('main section[id]').forEach((s) => spy.observe(s));
+    } else {
+        reveals.forEach((el) => el.classList.add('in'));
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
